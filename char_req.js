@@ -145,19 +145,19 @@ lupa_req: [
 ],
 lynae_req: [
 { min: '20*', max: '40', items: { 'Shell Credits' : 5000, 'LF Exoswarm Core': 4 } },
-{ min: '40*', max: '50', items: { 'Shell Credits' : 10000, "TBC2": 3, "TBC4": 4, 'MF Exoswarm Core': 4 } },
-{ min: '50*', max: '60', items: { 'Shell Credits' : 15000, "TBC2": 6, "TBC4": 8, 'MF Exoswarm Core': 8 } },
-{ min: '60*', max: '70', items: { 'Shell Credits' : 20000, "TBC2": 9, "TBC4": 12, 'HF Exoswarm Core': 4 } },
-{ min: '70*', max: '80', items: { 'Shell Credits' : 40000, "TBC2": 12, "TBC4": 16, 'HF Exoswarm Core': 8 } },
-{ min: '80*', max: '90', items: { 'Shell Credits' : 80000, "TBC2": 16, "TBC4": 20, 'FF Exoswarm Core': 4 } }
+{ min: '40*', max: '50', items: { 'Shell Credits' : 10000, "Suncoveter's Reach": 3, "Rimewisp": 4, 'MF Exoswarm Core': 4 } },
+{ min: '50*', max: '60', items: { 'Shell Credits' : 15000, "Suncoveter's Reach": 6, "Rimewisp": 8, 'MF Exoswarm Core': 8 } },
+{ min: '60*', max: '70', items: { 'Shell Credits' : 20000, "Suncoveter's Reach": 9, "Rimewisp": 12, 'HF Exoswarm Core': 4 } },
+{ min: '70*', max: '80', items: { 'Shell Credits' : 40000, "Suncoveter's Reach": 12, "Rimewisp": 16, 'HF Exoswarm Core': 8 } },
+{ min: '80*', max: '90', items: { 'Shell Credits' : 80000, "Suncoveter's Reach": 16, "Rimewisp": 20, 'FF Exoswarm Core': 4 } }
 ],
 mornye_req: [
 { min: '20*', max: '40', items: { 'Shell Credits' : 5000, 'LF Mech Core': 4 } },
-{ min: '40*', max: '50', items: { 'Shell Credits' : 10000, "TBC2": 3, "TBC4": 4, 'MF Mech Core': 4 } },
-{ min: '50*', max: '60', items: { 'Shell Credits' : 15000, "TBC2": 6, "TBC4": 8, 'MF Mech Core': 8 } },
-{ min: '60*', max: '70', items: { 'Shell Credits' : 20000, "TBC2": 9, "TBC4": 12, 'HF Mech Core': 4 } },
-{ min: '70*', max: '80', items: { 'Shell Credits' : 40000, "TBC2": 12, "TBC4": 16, 'HF Mech Core': 8 } },
-{ min: '80*', max: '90', items: { 'Shell Credits' : 80000, "TBC2": 16, "TBC4": 20, 'FF Mech Core': 4 } }
+{ min: '40*', max: '50', items: { 'Shell Credits' : 10000, "Burning Judgment": 3, "Gemini Spore": 4, 'MF Mech Core': 4 } },
+{ min: '50*', max: '60', items: { 'Shell Credits' : 15000, "Burning Judgment": 6, "Gemini Spore": 8, 'MF Mech Core': 8 } },
+{ min: '60*', max: '70', items: { 'Shell Credits' : 20000, "Burning Judgment": 9, "Gemini Spore": 12, 'HF Mech Core': 4 } },
+{ min: '70*', max: '80', items: { 'Shell Credits' : 40000, "Burning Judgment": 12, "Gemini Spore": 16, 'HF Mech Core': 8 } },
+{ min: '80*', max: '90', items: { 'Shell Credits' : 80000, "Burning Judgment": 16, "Gemini Spore": 20, 'FF Mech Core': 4 } }
 ],
 phoebe_req: [
 { min: '20*', max: '40', items: { 'Shell Credits' : 5000, 'LF Whisperin Core': 4 } },
