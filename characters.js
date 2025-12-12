@@ -216,6 +216,22 @@ const characters = [
     jsid: "lupa_req"
   },
   {
+    name: "Lynae",
+    image: "ww_icons/char/lynae_icon.webp",
+    rank: 1,
+    atrb: "spectro",
+    wpn: "pistols",
+    jsid: "lynae_req"
+  },
+  {
+    name: "Mornye",
+    image: "ww_icons/char/mornye_icon.webp",
+    rank: 1,
+    atrb: "fusion",
+    wpn: "boradblade",
+    jsid: "mornye_req"
+  },
+  {
     name: "Mortefi",
     image: "ww_icons/char/mortefi_icon.webp",
     rank: 2,
