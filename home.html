@@ -1,0 +1,708 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Wuthering Waves Character Planner</title>
+
+ <link rel="stylesheet" href="styles.css">
+ <link rel="icon" type="image/png" href="./ww_icons/abby.png">
+
+<script src="char_req.js"></script>
+<script src="skill_req.js"></script>
+<script src="stat_req.js"></script>
+<script src="inh_req.js"></script>
+<script src="characters.js"></script>
+<script src="inventory.js"></script>
+<script src="weapons.js"></script>
+<script src="wpn_req.js"></script>
+<script src="utils.js"></script>
+
+</head>
+<body>
+
+<div class="upper-section">
+  <h1 style = "margin-top: 1px;">Wuthering Waves Planner</h1>
+  <div class="button-container">
+<button class="button" id="inventoryBtn" onclick="openInventoryModal()">Inventory</button>
+<button class="button" id="addCharacterBtn" onclick="openCharacterSelectModal()">Add Character</button>
+<button class="button" id="addWeaponBtn" onclick="openWeaponSelectModal()">Add Weapon</button>
+<button class="button" id="setPriorityBtn" onclick="openPriorityModal()">Set Priority</button>
+    </div>
+    <input type="text" id="usernameInput" placeholder="Enter username" style="padding: 5px; margin-right: 10px;">
+<button class="uiButton" id="saveBtn" onclick="saveUserData()">Save</button>
+   <button class="uiButton" style="margin-left: 10px;" onclick="loadUserData()">Load</button>
+    
+</div>
+  
+  <div class="bottom-section">
+    <div class="left-half">
+       <h3 style ="color: #d5bb88;" >Missing Items Summary</h3>
+    </div>
+    <div class="right-half" id="characterContainer">
+      <!-- Character cards will appear here -->
+    </div>
+  </div>
+
+ <!-- Character Selection Modal -->
+  <div id="characterModal" class="modal">
+    <div class="charContainer">
+     <div class="header"> <div class="modal-buttons" style="text-align: right;">
+      <button class="cancel" onclick="closeCharacterSelectModal()"></button></div>
+        <div id="elementFilters" style="padding: 10px; text-align: center;" class="filter-buttons">
+          <!-- <button onclick="toggleElementFilter('spectro')">Spectro</button>
+          <button onclick="toggleElementFilter('fusion')">Fusion</button>
+          <button onclick="toggleElementFilter('electro')">Electro</button>
+          <button onclick="toggleElementFilter('aero')">Aero</button>
+          <button onclick="toggleElementFilter('glacio')">Glacio</button>
+          <button onclick="toggleElementFilter('havoc')">Havoc</button>   -->
+
+          <button onclick="toggleElementFilter('spectro')" style=" background-color: transparent; border-color: transparent;">
+            <img src="./ww_icons/attribute/spectro.png" alt="Spectro" style="width:40px; height:40px; vertical-align:middle; ">
+          </button>
+          <button onclick="toggleElementFilter('fusion')" style=" background-color: transparent; border-color: transparent;">
+            <img src="./ww_icons/attribute/fusion.png" alt="Fusion" style="width:40px; height:40px; vertical-align:middle; ">
+          </button>
+          <button onclick="toggleElementFilter('electro')" style=" background-color: transparent; border-color: transparent;">
+            <img src="./ww_icons/attribute/electro.png" alt="Electro" style="width:40px; height:40px; vertical-align:middle; ">
+          </button>
+          <button onclick="toggleElementFilter('aero')" style=" background-color: transparent; border-color: transparent;">
+            <img src="./ww_icons/attribute/aero.png" alt="Aero" style="width:40px; height:40px; vertical-align:middle; ">
+          </button>
+          <button onclick="toggleElementFilter('glacio')" style=" background-color: transparent; border-color: transparent;">
+            <img src="./ww_icons/attribute/glacio.png" alt="Glacio" style="width:40px; height:40px; vertical-align:middle; ">
+          </button>
+          <button onclick="toggleElementFilter('havoc')" style=" background-color: transparent; border-color: transparent;">
+            <img src="./ww_icons/attribute/havoc.png" alt="Havoc" style="width:40px; height:40px; vertical-align:middle; ">
+          </button>   
+
+        </div>
+        <div id="rankFilters" class="filter-buttons" style="text-align: center;" >
+          <!-- <button onclick="toggleRankFilter(1)">Rank 1</button>
+          <button onclick="toggleRankFilter(2)">Rank 2</button> -->
+
+           <button onclick="toggleRankFilter(1)" style=" background-color: transparent; border-color: transparent;">
+            <img src="./ww_icons/general/five_star.png" alt="Rank 1" style="width:40px; height:40px; vertical-align:middle; ">
+          </button>
+          <button onclick="toggleRankFilter(2)" style=" background-color: transparent; border-color: transparent;">
+            <img src="./ww_icons/general/four_star.png" alt="Rank 2" style="width:40px; height:40px; vertical-align:middle; ">
+          </button>   
+        </div>
+    </div>
+     <div class="char">
+    <!-- <div class="char-modal-content"> -->
+      <div id="characterOptionsContainer"></div>      
+    <!-- </div> -->		
+  </div>
+</div>
+</div>
+
+  <!-- Level and Skills Modal -->
+   <div id="levelModal" class="modal">
+    <div class="levelContainer" style="width: auto;">							   
+      <div class="header"> <h3 style="font-size: 25px;"  id="levelModalTitle">Set Levels</h3>  
+      <button id="setAllDesiredButton" onclick="setAllDesiredToMax()" style="position: absolute; right: 20px;">Max Levels</button>
+</div>
+<div class="level">
+        <h3>Lv.</h3>
+        <div class="level-pair"  style="justify-content: center; ">
+            <div>
+                <label for="currentLevel">Current</label>
+                <div class="level-control">                    
+                    <button type="button" onclick="adjustLevel('currentLevelButton', -1)">−</button>
+                    <button type="button" id="currentLevelButton" onclick="openModal('currentLevel')">1</button>
+                    <button type="button" onclick="adjustLevel('currentLevelButton', 1)">+</button>
+                </div>
+            </div>
+            <div>
+                <label for="desiredLevel">Desired</label>
+                <div class="level-control">
+                    <button type="button" onclick="adjustLevel('desiredLevelButton', -1)">−</button>
+                    <button type="button" id="desiredLevelButton" onclick="openModal('desiredLevel')">1</button>
+                    <button type="button" onclick="adjustLevel('desiredLevelButton', 1)">+</button>
+                </div>
+            </div>
+        </div>
+</div>
+																			 
+								
+<div class="skill1">
+      <h3>Stat 1</h3>
+      <div class="level-pair"  style="justify-content: center; ">
+        <div>
+          <label for="stat1Current">Current</label>
+          <div class="level-control">
+            <button type="button" onclick="adjustLevel('stat1Current', -1)">−</button>
+            <select id="stat1Current" ></select>
+            <button type="button" onclick="adjustLevel('stat1Current', 1)">+</button>
+          </div>
+        </div>
+        <div>
+          <label for="stat1Desired">Desired</label>
+          <div class="level-control">
+            <button type="button" onclick="adjustLevel('stat1Desired', -1)">−</button>
+            <select id="stat1Desired" ></select>
+            <button type="button" onclick="adjustLevel('stat1Desired', 1)">+</button>
+          </div>
+        </div>
+      </div>
+
+								 
+      <h3>Stat 2</h3>
+      <div class="level-pair"  style="justify-content: center; ">
+        <div>
+          <label for="stat2Current">Current</label>
+          <div class="level-control">
+            <button type="button" onclick="adjustLevel('stat2Current', -1)">−</button>
+            <select id="stat2Current"></select>
+            <button type="button" onclick="adjustLevel('stat2Current', 1)">+</button>
+          </div>
+        </div>
+        <div>
+          <label for="stat2Desired">Desired</label>
+          <div class="level-control">
+            <button type="button" onclick="adjustLevel('stat2Desired', -1)">−</button>
+            <select id="stat2Desired"></select>
+            <button type="button" onclick="adjustLevel('stat2Desired', 1)">+</button>
+          </div>
+        </div>
+      </div>
+
+								 
+      <h3>Stat 3</h3>
+      <div class="level-pair"  style="justify-content: center; ">
+        <div>
+          <label for="stat3Current">Current</label>
+          <div class="level-control">
+            <button type="button" onclick="adjustLevel('stat3Current', -1)">−</button>
+            <select id="stat3Current"></select>
+            <button type="button" onclick="adjustLevel('stat3Current', 1)">+</button>
+          </div>
+        </div>
+        <div>
+          <label for="stat3Desired">Desired</label>
+          <div class="level-control">
+            <button type="button" onclick="adjustLevel('stat3Desired', -1)">−</button>
+            <select id="stat3Desired"></select>
+            <button type="button" onclick="adjustLevel('stat3Desired', 1)">+</button>
+          </div>
+        </div>
+      </div>
+
+								 
+      <h3>Stat 4</h3>
+      <div class="level-pair"  style="justify-content: center; ">
+        <div>
+          <label for="stat4Current">Current</label>
+          <div class="level-control">
+            <button type="button" onclick="adjustLevel('stat4Current', -1)">−</button>
+            <select id="stat4Current"></select>
+            <button type="button" onclick="adjustLevel('stat4Current', 1)">+</button>
+          </div>
+        </div>
+        <div>
+          <label for="stat4Desired">Desired</label>
+          <div class="level-control">
+            <button type="button" onclick="adjustLevel('stat4Desired', -1)">−</button>
+            <select id="stat4Desired"></select>
+            <button type="button" onclick="adjustLevel('stat4Desired', 1)">+</button>
+          </div>
+        </div>
+      </div>
+
+								 
+      <h3>inherent</h3>
+      <div class="level-pair"  style="justify-content: center; ">
+        <div>
+          <label for="inherentCurrent">Current</label>
+          <div class="level-control">
+            <button type="button" onclick="adjustLevel('inherentCurrent', -1)">−</button>
+            <select id="inherentCurrent"></select>
+            <button type="button" onclick="adjustLevel('inherentCurrent', 1)">+</button>
+          </div>
+        </div>
+        <div>
+          <label for="inherentDesired">Desired</label>
+          <div class="level-control">
+            <button type="button" onclick="adjustLevel('inherentDesired', -1)">−</button>
+            <select id="inherentDesired"></select>
+            <button type="button" onclick="adjustLevel('inherentDesired', 1)">+</button>
+          </div>
+        </div>
+      </div>
+</div>
+			 
+							
+ <div class="skill2">
+        <h3>Skill 1</h3>
+        <div class="level-pair"  style="justify-content: center; ">
+          <div>
+          <label for="skill1Current">Current</label>
+          
+<div class="level-control">
+  <button type="button" onclick="adjustLevel('skill1Current', -1)">−</button>
+  <select id="skill1Current"></select>
+  <button type="button" onclick="adjustLevel('skill1Current', 1)">+</button>
+</div>
+
+          </div>
+          <div>
+          <label for="skill1Desired">Desired</label>
+          
+<div class="level-control">
+  <button type="button" onclick="adjustLevel('skill1Desired', -1)">−</button>
+  <select id="skill1Desired"></select>
+  <button type="button" onclick="adjustLevel('skill1Desired', 1)">+</button>
+</div>
+
+          </div>
+        </div>
+			
+
+								   
+        <h3>Skill 2</h3>
+        <div class="level-pair"  style="justify-content: center; ">
+          <div>
+          <label for="skill2Current">Current</label>
+          
+<div class="level-control">
+  <button type="button" onclick="adjustLevel('skill2Current', -1)">−</button>
+  <select id="skill2Current"></select>
+  <button type="button" onclick="adjustLevel('skill2Current', 1)">+</button>
+</div>
+
+          </div>
+          <div>
+          <label for="skill2Desired">Desired</label>
+          
+<div class="level-control">
+  <button type="button" onclick="adjustLevel('skill2Desired', -1)">−</button>
+  <select id="skill2Desired"></select>
+  <button type="button" onclick="adjustLevel('skill2Desired', 1)">+</button>
+</div>
+
+          </div>
+        </div>
+			
+
+								   
+        <h3>Skill 3</h3>
+        <div class="level-pair"  style="justify-content: center; ">
+          <div>
+          <label for="skill3Current">Current</label>
+          
+<div class="level-control">
+  <button type="button" onclick="adjustLevel('skill3Current', -1)">−</button>
+  <select id="skill3Current"></select>
+  <button type="button" onclick="adjustLevel('skill3Current', 1)">+</button>
+</div>
+
+          </div>
+          <div>
+          <label for="skill3Desired">Desired</label>
+          
+<div class="level-control">
+  <button type="button" onclick="adjustLevel('skill3Desired', -1)">−</button>
+  <select id="skill3Desired"></select>
+  <button type="button" onclick="adjustLevel('skill3Desired', 1)">+</button>
+</div>
+
+          </div>
+        </div>
+			
+
+								   
+        <h3>Skill 4</h3>
+        <div class="level-pair"  style="justify-content: center; ">
+          <div>
+          <label for="skill4Current">Current</label>
+          
+<div class="level-control">
+  <button type="button" onclick="adjustLevel('skill4Current', -1)">−</button>
+  <select id="skill4Current"></select>
+  <button type="button" onclick="adjustLevel('skill4Current', 1)">+</button>
+</div>
+
+          </div>
+          <div>
+          <label for="skill4Desired">Desired</label>
+          
+<div class="level-control">
+  <button type="button" onclick="adjustLevel('skill4Desired', -1)">−</button>
+  <select id="skill4Desired"></select>
+  <button type="button" onclick="adjustLevel('skill4Desired', 1)">+</button>
+</div>
+
+          </div>
+        </div>
+			
+
+								   
+        <h3>Skill 5</h3>
+        <div class="level-pair"  style="justify-content: center; ">
+          <div>
+          <label for="skill5Current">Current</label>
+          
+<div class="level-control">
+  <button type="button" onclick="adjustLevel('skill5Current', -1)">−</button>
+  <select id="skill5Current"></select>
+  <button type="button" onclick="adjustLevel('skill5Current', 1)">+</button>
+</div>
+
+          </div>
+          <div>
+          <label for="skill5Desired">Desired</label>
+          
+<div class="level-control">
+  <button type="button" onclick="adjustLevel('skill5Desired', -1)">−</button>
+  <select id="skill5Desired"></select>
+  <button type="button" onclick="adjustLevel('skill5Desired', 1)">+</button>
+</div>
+       </div>
+      </div>
+     </div>
+<div class="footer">
+<div class="modal-buttons">
+  <button class="cancel" onclick="closeLevelModal()"></button>
+  <button class="confirm" id="confirmButton" onclick="confirmCharacter()"></button>
+</div>
+
+</div>
+   </div>
+ </div>
+
+  <!-- Weapon Selection Modal -->
+  <div id="weaponModal" class="modal">
+    <div class="charContainer">
+     <div class="header">     <div class="modal-buttons" style="text-align: right;">
+      <button class="cancel" onclick="closeWeaponSelectModal()"></button></div>
+    </div>
+     <div class="char">
+    <!-- <div class="char-modal-content"> -->
+      <div id="weaponOptionsContainer"></div>      
+    <!-- </div> -->		
+  </div>
+</div>
+</div>
+  
+    <!-- Modal -->
+    <div id="lvlModal" class="lvl-modal">
+      <div class="lvl-modal-content">
+        <div id="modalButtons"></div>
+      </div>
+    </div> 
+
+
+    <div id="inventoryModal" class="modal">
+      <div class="inventoryContainer">
+        <div class="header">    
+          <button class="inv-cancel" onclick="closeInventoryModal()">Save and Close</button> 
+            <div id="categoryFilters" class="filter-buttons">
+              <button onclick="toggleCategoryFilter('general')">General</button>
+              <button onclick="toggleCategoryFilter('enemy')">Enemy</button>
+              <button onclick="toggleCategoryFilter('weekly')">Weekly</button>
+              <button onclick="toggleCategoryFilter('boss')">Boss</button>
+              <button onclick="toggleCategoryFilter('domain')">Domain</button>      
+              <button onclick="toggleCategoryFilter('flower')">Flower</button>           
+            </div>
+        </div>
+        <div class="inventory">
+        <ul id="inventoryList" style="padding: 0;"></ul>
+
+      </div>
+    </div>		  
+       </div>
+    
+    <div id="priorityModal" class="modal"> <!-- new -->
+      <div class="bg-modal-content" style="width: 300px;">
+        <h3>Reorder Characters</h3>
+        <ul id="priorityList" style="list-style: none; padding: 0;"></ul>
+        <div class="modal-buttons">          
+          <button class="cancel" onclick="closePriorityModal()"></button>
+          <button class="confirm" onclick="savePriorityOrder()"></button>
+        </div>
+      </div>
+    </div>
+
+<div id="craftableModal" class="modal">
+<div class="craftContainer"  style=" width: auto;">													
+   <div class="header"> <h3 style="font-size: 25px;" id="craftableTitle">Craftable Items from Inventory</h3></div>									   
+  <div class="clevel">
+      <h3>Lv.</h3>
+      <div class="level-pair"  style="justify-content: center; ">
+          <div>
+              <label for="craftCurrentLevel">Current</label>
+              <div class="level-control">                    
+                  <button style="display: none;" type="button" onclick="adjustLevel('craftCurrentLevelButton', -1)">−</button>
+                  <span id="craftCurrentLevelButton" class="button-like" style="height: 28px;">1</span>
+                  <button style="display: none;" type="button" onclick="adjustLevel('craftCurrentLevelButton', 1)">+</button>
+              </div>
+          </div>
+          <div>
+              <label for="craftDesiredLevel">Desired</label>
+              <div class="level-control">
+                  <button type="button" onclick="adjustLevel('craftDesiredLevelButton', -1)">−</button>
+                  <button type="button" id="craftDesiredLevelButton" onclick="openCraftModal('craftDesiredLevel')">1</button>
+                  <button type="button" onclick="adjustLevel('craftDesiredLevelButton', 1)">+</button>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="cskill1">
+    <h3>Stat 1</h3>
+    <div class="level-pair"  style="justify-content: center; ">
+      <div>
+        <label for="craftStat1Current">Current</label>
+        <div class="level-control">
+          <button style="display: none;" type="button" onclick="adjustLevel('craftStat1Current', -1)">−</button>
+          <select id="craftStat1Current"></select>
+          <button style="display: none;" type="button" onclick="adjustLevel('craftStat1Current', 1)">+</button>
+        </div>
+      </div>
+      <div>
+        <label for="craftStat1Desired">Desired</label>
+        <div class="level-control">
+          <button type="button" onclick="adjustLevel('craftStat1Desired', -1)">−</button>
+          <select id="craftStat1Desired" ></select>
+          <button type="button" onclick="adjustLevel('craftStat1Desired', 1)">+</button>
+        </div>
+      </div>
+    </div>
+    <h3>Stat 2</h3>
+    <div class="level-pair"  style="justify-content: center; ">
+      <div>
+        <label for="craftStat2Current">Current</label>
+        <div class="level-control">
+          <button style="display: none;" type="button" onclick="adjustLevel('craftStat2Current', -1)">−</button>
+          <select id="craftStat2Current" ></select>
+          <button style="display: none;" type="button" onclick="adjustLevel('craftStat2Current', 1)">+</button>
+        </div>
+      </div>
+      <div>
+        <label for="craftStat2Desired">Desired</label>
+        <div class="level-control">
+          <button type="button" onclick="adjustLevel('craftStat2Desired', -1)">−</button>
+          <select id="craftStat2Desired" ></select>
+          <button type="button" onclick="adjustLevel('craftStat2Desired', 1)">+</button>
+        </div>
+      </div>
+    </div>
+    <h3>Stat 3</h3>
+    <div class="level-pair"  style="justify-content: center; ">
+      <div>
+        <label for="craftStat3Current">Current</label>
+        <div class="level-control">
+          <button style="display: none;" type="button" onclick="adjustLevel('craftStat3Current', -1)">−</button>
+          <select id="craftStat3Current" ></select>
+          <button style="display: none;" type="button" onclick="adjustLevel('craftStat3Current', 1)">+</button>
+        </div>
+      </div>
+      <div>
+        <label for="craftStat3Desired">Desired</label>
+        <div class="level-control">
+          <button type="button" onclick="adjustLevel('craftStat3Desired', -1)">−</button>
+          <select id="craftStat3Desired" ></select>
+          <button type="button" onclick="adjustLevel('craftStat3Desired', 1)">+</button>
+        </div>
+      </div>
+    </div>
+    <h3>Stat 4</h3>
+    <div class="level-pair"  style="justify-content: center; ">
+      <div>
+        <label for="craftStat4Current">Current</label>
+        <div class="level-control">
+          <button style="display: none;" type="button" onclick="adjustLevel('craftStat4Current', -1)">−</button>
+          <select id="craftStat4Current" ></select>
+          <button style="display: none;" type="button" onclick="adjustLevel('craftStat4Current', 1)">+</button>
+        </div>
+      </div>
+      <div>
+        <label for="craftStat4Desired">Desired</label>
+        <div class="level-control">
+          <button type="button" onclick="adjustLevel('craftStat4Desired', -1)">−</button>
+          <select id="craftStat4Desired" ></select>
+          <button type="button" onclick="adjustLevel('craftStat4Desired', 1)">+</button>
+        </div>
+      </div>
+    </div>
+    <h3>Inherent</h3>
+    <div class="level-pair"  style="justify-content: center; ">
+      <div>
+        <label for="craftInherentCurrent">Current</label>
+        <div class="level-control">
+          <button style="display: none;" type="button" onclick="adjustLevel('craftInherentCurrent', -1)">−</button>
+          <select id="craftInherentCurrent" ></select>
+          <button style="display: none;" type="button" onclick="adjustLevel('craftInherentCurrent', 1)">+</button>
+        </div>
+      </div>
+      <div>
+        <label for="craftInherentDesired">Desired</label>
+        <div class="level-control">
+          <button type="button" onclick="adjustLevel('craftInherentDesired', -1)">−</button>
+          <select id="craftInherentDesired" ></select>
+          <button type="button" onclick="adjustLevel('craftInherentDesired', 1)">+</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cskill2">
+      <h3>Skill 1</h3>
+      <div class="level-pair"  style="justify-content: center; ">
+        <div>
+        <label for="craftSkill1Current">Current</label>
+        
+<div class="level-control">
+<button style="display: none;" type="button" onclick="adjustLevel('craftSkill1Current', -1)">−</button>
+<select id="craftSkill1Current" ></select>
+<button style="display: none;" type="button" onclick="adjustLevel('craftSkill1Current', 1)">+</button>
+</div>
+
+        </div>
+        <div>
+        <label for="craftSkill1Desired">Desired</label>
+        
+<div class="level-control">
+<button type="button" onclick="adjustLevel('craftSkill1Desired', -1)">−</button>
+<select id="craftSkill1Desired" ></select>
+<button type="button" onclick="adjustLevel('craftSkill1Desired', 1)">+</button>
+</div>
+
+        </div>
+      </div>
+
+      <h3>Skill 2</h3>
+      <div class="level-pair"  style="justify-content: center; ">
+        <div>
+        <label for="craftSkill2Current">Current</label>
+        
+<div class="level-control">
+<button style="display: none;" type="button" onclick="adjustLevel('craftSkill2Current', -1)">−</button>
+<select id="craftSkill2Current" ></select>
+<button style="display: none;" type="button" onclick="adjustLevel('craftSkill2Current', 1)">+</button>
+</div>
+
+        </div>
+        <div>
+        <label for="craftSkill2Desired">Desired</label>
+        
+<div class="level-control">
+<button type="button" onclick="adjustLevel('craftSkill2Desired', -1)">−</button>
+<select id="craftSkill2Desired" ></select>
+<button type="button" onclick="adjustLevel('craftSkill2Desired', 1)">+</button>
+</div>
+
+        </div>
+      </div>
+
+      <h3>Skill 3</h3>
+      <div class="level-pair"  style="justify-content: center; ">
+        <div>
+        <label for="craftSkill3Current">Current</label>
+        
+<div class="level-control">
+<button style="display: none;" type="button" onclick="adjustLevel('craftSkill3Current', -1)">−</button>
+<select id="craftSkill3Current" ></select>
+<button style="display: none;" type="button" onclick="adjustLevel('craftSkill3Current', 1)">+</button>
+</div>
+
+        </div>
+        <div>
+        <label for="craftSkill3Desired">Desired</label>
+        
+<div class="level-control">
+<button type="button" onclick="adjustLevel('craftSkill3Desired', -1)">−</button>
+<select id="craftSkill3Desired" ></select>
+<button type="button" onclick="adjustLevel('craftSkill3Desired', 1)">+</button>
+</div>
+
+        </div>
+      </div>
+
+      <h3>Skill 4</h3>
+      <div class="level-pair"  style="justify-content: center; ">
+        <div>
+        <label for="craftSkill4Current">Current</label>
+        
+<div class="level-control">
+<button style="display: none;" type="button" onclick="adjustLevel('craftSkill4Current', -1)">−</button>
+<select id="craftSkill4Current" ></select>
+<button style="display: none;" type="button" onclick="adjustLevel('craftSkill4Current', 1)">+</button>
+</div>
+
+        </div>
+        <div>
+        <label for="craftSkill4Desired">Desired</label>
+        
+<div class="level-control">
+<button type="button" onclick="adjustLevel('craftSkill4Desired', -1)">−</button>
+<select id="craftSkill4Desired" ></select>
+<button type="button" onclick="adjustLevel('craftSkill4Desired', 1)">+</button>
+</div>
+
+        </div>
+      </div>
+
+      <h3>Skill 5</h3>
+      <div class="level-pair"  style="justify-content: center; ">
+        <div>
+        <label for="craftSkill5Current">Current</label>
+        
+<div class="level-control">
+<button style="display: none;" type="button" onclick="adjustLevel('craftSkill5Current', -1)">−</button>
+<select id="craftSkill5Current" ></select>
+<button style="display: none;" type="button" onclick="adjustLevel('craftSkill5Current', 1)">+</button>
+</div>
+
+        </div>
+        <div>
+        <label for="craftSkill5Desired">Desired</label>
+        
+<div class="level-control">
+<button type="button" onclick="adjustLevel('craftSkill5Desired', -1)">−</button>
+<select id="craftSkill5Desired" ></select>
+<button type="button" onclick="adjustLevel('craftSkill5Desired', 1)">+</button>
+</div>
+
+        </div>
+      </div>
+    </div>
+										
+  <div class="craft"><div id="craftableContent" ></div>
+  <div class="modal-buttons">
+      <button class="cancel" onclick="closeCraftableModal()"></button>
+      <button class="confirm" onclick="applyCrafting()"></button>
+    </div>   
+
+	  
+</div>
+</div>
+</div>
+
+<div id="groupModal" class="modal">
+  <div class="modal-inv-popout-image">
+  <div class="modal-inv-popout">
+    <div id="groupItemsContainer"></div>
+    <button onclick="saveGroupInventory()" style="margin-top: 20px;">Save Changes</button>
+  </div>
+</div>
+</div>
+
+<div id="confirmModal" class="modal">
+  <div class="modal-removechar-image">
+  <!-- <div class="modal-content">     -->
+<h3 id="confirmCharacterName"></h3>
+    <div style="display: flex; justify-content: center; align-items: center; margin-top: 10px; margin-bottom: 10px;">
+      <img id="confirmCharacterImage" src="" alt="Character Image" style="max-width: 100px; height: auto; display: none;">
+    </div>
+<p>Remove?</p>
+    <button id="confirmYes">Yes</button>
+    <button id="confirmNo">No</button>
+  <!-- </div> -->
+</div>
+</div>
+
+<button onclick="exportPlannerData()">Export Planner Data</button>
+<input type="file" id="importFileInput" accept=".json" onchange="importPlannerData(event)" />
+
+</body>
+</html>
