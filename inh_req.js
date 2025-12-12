@@ -71,6 +71,14 @@ lupa_req: [
 { from: 0, to: 1, items: { 'Shell Credits': 10000, 'Waveworn Residue 226': 3, 'MF Howler Core': 3, "The Netherworld's Stare": 1 } },
 { from: 1, to: 2, items: { 'Shell Credits': 20000, 'Waveworn Residue 235': 3, 'HF Howler Core': 3, "The Netherworld's Stare": 1 } }
 ],
+lynae_req: [
+{ from: 0, to: 1, items: { 'Shell Credits': 10000, 'Aftertune Combustor': 3, 'MF Exoswarm Core': 3, "Dreamless Feather": 1 } },
+{ from: 1, to: 2, items: { 'Shell Credits': 20000, 'Reverberation Combustor': 3, 'HF Exoswarm Core': 3, "Dreamless Feather": 1 } }
+],
+mornye_req: [
+{ from: 0, to: 1, items: { 'Shell Credits': 10000, 'MF Carved Crystal': 3, 'MF Mech Core': 3, "The Netherworld's Stare": 1 } },
+{ from: 1, to: 2, items: { 'Shell Credits': 20000, 'HF Carved Crystal': 3, 'HF Mech Core': 3, "The Netherworld's Stare": 1 } }
+],
 phoebe_req: [
 { from: 0, to: 1, items: { 'Shell Credits': 10000, 'Adagio Helix': 3, 'MF Whisperin Core': 3, "Sentinel's Dagger": 1 } },
 { from: 1, to: 2, items: { 'Shell Credits': 20000, 'Andante Helix': 3, 'HF Whisperin Core': 3, "Sentinel's Dagger": 1 } }
