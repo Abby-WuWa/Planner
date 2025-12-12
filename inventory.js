@@ -77,6 +77,8 @@ const itemMetadata = {
 "Truth in Lies": { group: "do", category: "boss", rank: 3, image: "ww_icons/res_mat/truth_in_lies.webp"},
 "Blighted Crown of Puppet King": { group: "dp", category: "boss", rank: 3, image: "ww_icons/res_mat/blighted_crown_of_puppet_king.webp"},
 "Abyssal Husk": { group: "dq", category: "boss", rank: 3, image: "ww_icons/res_mat/abyssal_husk.webp"},
+"Suncoveter's Reach": { group: "dr", category: "boss", rank: 3, image: "ww_icons/res_mat/tbc2.webp"},
+"Burning Judgment": { group: "ds", category: "boss", rank: 3, image: "ww_icons/res_mat/tbc2.webp"},
 
 /*Domain Drops*/
 "TBC3": { group: "e", category: "domain", rank: 0, image: "ww_icons/general/tbc3.webp"},
@@ -133,4 +135,6 @@ const itemMetadata = {
 "Sliverglow Bloom": { group: "fat", category: "flower", rank: 0, image: "ww_icons/asc_mat/sliverglow_bloom.webp"},
 "Stone Rose": { group: "fau", category: "flower", rank: 0, image: "ww_icons/asc_mat/stone_rose.webp"},
 "Summer Flower": { group: "fav", category: "flower", rank: 0, image: "ww_icons/asc_mat/summer_flower.webp"},
+"Rimewisp": { group: "faw", category: "flower", rank: 0, image: "ww_icons/asc_mat/tbc4.webp"},
+"Gemini Spore": { group: "fax", category: "flower", rank: 0, image: "ww_icons/asc_mat/tbc4.webp"},
 };
