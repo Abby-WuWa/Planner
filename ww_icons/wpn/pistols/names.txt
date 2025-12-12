@@ -1,0 +1,17 @@
+filelist.bat
+names.txt
+Cadenza.webp
+Guardian-Pistols.webp
+Novaburst.webp
+Originite-Type-III.webp
+Pistols26.webp
+Pistols-of-Night.webp
+Pistols-of-Voyager.webp
+Relativistic-Jet.webp
+Static-Mist.webp
+The-Last-Dance.webp
+Thunderbolt.webp
+Training-Pistols.webp
+Tyro-Pistols.webp
+Undying-Flame.webp
+Woodland-Aria.webp

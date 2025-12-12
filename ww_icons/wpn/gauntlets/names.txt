@@ -1,0 +1,17 @@
+filelist.bat
+names.txt
+Abyss-Surges.webp
+Amity-Accord.webp
+Celestial-Spiral.webp
+Gauntlets21D.webp
+Gauntlets-of-Night.webp
+Gauntlets-of-Voyager.webp
+Guardian-Gauntlets.webp
+Hollow-Mirage.webp
+Marcato.webp
+Originite-Type-IV.webp
+Stonard.webp
+Tragicomedy.webp
+Training-Gauntlets.webp
+Tyro-Gauntlets.webp
+Veritys-Handle.webp
