@@ -30,10 +30,11 @@
       font-weight: bold;
     }
 
-    .bottom-section {
-      display: flex;
-      height: calc(100vh - 100px);
-    }
+.bottom-section {
+  display: flex;
+  flex-direction: row;   /* side by side */
+  height: calc(100vh - 100px);
+}
 
     .left-half {
       width: 350px;
@@ -44,6 +45,7 @@
       border-right: 1px solid #d5bb88;
       box-shadow: 1px 0px 5px #d5bb88;
       flex-shrink: 0;
+      order:1;
     }
 
     .right-half {
@@ -53,6 +55,26 @@
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
+      order:2;
+    }
+
+    @media(max-width:1190px) {
+            .bottom-section {
+        flex-direction: column;   /* stack vertically */
+        height: auto;             /* let content define height */
+      }
+
+      .left-half {
+        width: 100%;              /* full width on mobile */
+        border-right: none;       /* remove side border */
+        border-top: 1px solid #d5bb88; /* optional: add top border instead */
+        box-shadow: none;         /* optional: remove side shadow */
+        order: 2;                 /* push to bottom */
+      }
+
+      .right-half {
+        order: 1;                 /* show above */
+      }
     }
 
     .character-card {
