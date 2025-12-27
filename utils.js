@@ -569,11 +569,11 @@ if (requiredExp > 0) {
     const bgStyle = `border-bottom: 2px solid #e8d254; background-image: linear-gradient( #e8d25403 50%, #e8d25440 ); padding: 3px; border-radius: 6px;${(!isOff && metExp >= requiredExp) ? ' filter: brightness(50%);' : ''}`;
     const displayMetQty = isOff ? 0 : metExp;
     const imageStyle = `width: 55px; height: 55px;${(!isOff && metExp >= requiredExp) ? ' filter: brightness(70%);' : ''}`;
-				 
+		const hStyle = `${(!isOff && metExp >= requiredExp) ? 'background-color: #292929ff; filter: brightness(30%);' : 'background-color: black;'}`;
 
     requiredItemsHTML += `
     <li style="display: inline-block; width: 65px; text-align: center; margin: 5px;"  onclick="openGroupModal('${expGroup}')">
-      <div class="mobile-text" style="font-size: 12px; background-color: black;">  ${formatNumberShort(displayMetQty)} <span style="font-weight: bold;">/</span> ${formatNumberShort(requiredExp)}</div>
+      <div class="mobile-text" style="font-size: 12px; ${hStyle}">  ${formatNumberShort(displayMetQty)} <span style="font-weight: bold;">/</span> ${formatNumberShort(requiredExp)}</div>
         <div style="position: relative; display: inline-block; ${bgStyle}">
         <img src="${expIcon}" alt="EXP" style="${imageStyle}">
       </div>			
@@ -600,14 +600,14 @@ if (totalShellCreditRequired > 0) {
     4: '#e8d254'
       };
   const baseColor = rankColors[meta?.rank] ?? '#eee';
-   const bgStyle = `border-bottom: 2px solid${baseColor}; background-image: linear-gradient(${baseColor}03 50%, ${baseColor}40 ); padding: 3px; border-radius: 6px;${(!isOff && metQty >= totalShellCreditRequired) ? ' filter: brightness(50%);' : ''}`;
-
+  const bgStyle = `border-bottom: 2px solid${baseColor}; background-image: linear-gradient(${baseColor}03 50%, ${baseColor}40 ); padding: 3px; border-radius: 6px;${(!isOff && metQty >= totalShellCreditRequired) ? ' filter: brightness(50%);' : ''}`;
+  const hStyle = `${(!isOff && metQty >= totalShellCreditRequired) ? 'background-color: #292929ff; filter: brightness(30%);' : 'background-color: black;'}`;
   const displayMetQty = isOff ? 0 : metQty;
   const imageStyle = `width: 55px; height: 55px;${(!isOff && metQty >= totalShellCreditRequired) ? ' filter: brightness(70%);' : ''}`;
 
     requiredItemsHTML += `
     <li style="display: inline-block; width: 65px; text-align: center; margin: 5px; "onclick="openGroupModal('${meta.group}')">
-      <div class="mobile-text" style="font-size: 12px; background-color: black;">  ${formatNumberShort(displayMetQty)} <span style="font-weight: bold;">/</span> ${formatNumberShort(totalShellCreditRequired)}</div>
+      <div class="mobile-text" style="font-size: 12px; ${hStyle}">  ${formatNumberShort(displayMetQty)} <span style="font-weight: bold;">/</span> ${formatNumberShort(totalShellCreditRequired)}</div>
         <div style="position: relative; display: inline-block; ${bgStyle}">
         <img src="${iconPath}" alt="Shell Credit"  style="${imageStyle}">
       </div>
@@ -635,21 +635,18 @@ if (totalShellCreditRequired > 0) {
 
     const baseColor = rankColors[meta?.rank] ?? '#eee';
     const bgStyle = `border-bottom: 2px solid${baseColor}; background-image: linear-gradient(${baseColor}03 50%, ${baseColor}40 ); padding: 3px; border-radius: 6px;${(!isOff && metQty >= requiredQty) ? ' filter: brightness(50%);' : ''}`;
-
+    const hStyle = `${(!isOff && metQty >= requiredQty) ? 'background-color: #292929ff; filter: brightness(30%);' : 'background-color: black;'}`;
     const displayMetQty = isOff ? 0 : metQty;
     const displayCraftedNote = (!isOff && craftedUsed > 0)
-      ? `<div class="mobile-text" style="position: absolute; bottom: 0; left: 0; background: rgba(0,0,0,0.6); color: white; font-size: 10px; padding: 1px 3px; border-radius: 3px;">${craftedUsed}</div>`
+      ? `<div class="mobile-text" style="position: absolute; bottom: 0; left: 0; background: rgba(0,0,0,0.6); color: white; font-size: 12px; padding: 1px 3px; border-radius: 3px;">${craftedUsed}</div>`
       : '';
     const imageStyle = `width: 55px; height: 55px;${(!isOff && metQty >= requiredQty) ? ' filter: brightness(70%);' : ''}`;
 
     requiredItemsHTML += `
     <li style="display: inline-block; width: 65px; text-align: center; margin: 5px;" onclick="openGroupModal('${meta.group}')">
-      <div class="mobile-text" style="font-size: 12px; background-color: black;">  ${formatNumberShort(displayMetQty)} <span style="font-weight: bold;">/</span> ${formatNumberShort(requiredQty)}</div>
+      <div class="mobile-text" style="font-size: 14px; ${hStyle}">  ${formatNumberShort(displayMetQty)} <span style="font-weight: bold;">/</span> ${formatNumberShort(requiredQty)}</div>
         <div style="position: relative; display: inline-block; ${bgStyle}">
         <img src="${iconPath}" alt="${item}" style="${imageStyle}">
-																		 
-																						
-																					  
         ${displayCraftedNote}
       </div>
 		  
@@ -1233,12 +1230,9 @@ if (requiredExp > 0) {
       const imageStyle = `width: 55px; height: 55px; border-radius: 4px;`;
 
     breakdownHTML += `
-      <li style="display: inline-block; width: 65px; text-align: center; margin: 5px;" onclick="openGroupModal('${expGroup}')">
-      
-                <div class="mobile-text" style="font-size: 12px; background-color: black; color: ${metExp >= requiredExp ? 'green' : 'red'};">${formatNumberShort(qty)}</div>
-				
-			  
-         <div style="position: relative; display: inline-block;  ${bgStyle}; ">
+      <li style="display: inline-block; width: 65px; text-align: center; margin: 5px;" onclick="openGroupModal('${expGroup}')">      
+                <div class="mobile-text" style="font-size: 14px; background-color: black; color: ${metExp >= requiredExp ? 'green' : 'red'};">${formatNumberShort(qty)}</div>
+		       <div style="position: relative; display: inline-block;  ${bgStyle}; ">
           <img src="${iconPath}" alt="${item}" style="${imageStyle}">
         </div>
       </li>`;
@@ -1274,10 +1268,10 @@ for (const [item, requiredQty] of sortedItems) {
 
     breakdownHTML += `
       <li style="display: inline-block; width: 65px; text-align: center; margin: 5px;" onclick="openGroupModal('${meta.group}')">
-        <div class="mobile-text"  style="font-size: 12px; background-color: black; color: ${metQty >= requiredQty ? 'green' : 'red'};">${formatNumberShort(metQty)} <span style="font-weight: bold;">/</span> ${formatNumberShort(requiredQty)}</div>
+        <div class="mobile-text" style="font-size: 14px; background-color: black; color: ${metQty >= requiredQty ? 'green' : 'red'};">${formatNumberShort(metQty)} <span style="font-weight: bold;">/</span> ${formatNumberShort(requiredQty)}</div>
         <div style="position: relative; display: inline-block;  ${bgStyle}; ">
           <img src="${iconPath}" alt="${item}" style="${imageStyle}">
-          ${showCrafted ? `<div class="mobile-text" style="position: absolute; bottom: 0; left: 0; background: rgba(0,0,0,0.6); color: white; font-size: 10px; padding: 1px 3px; border-radius: 3px;">${craftedUsed}</div>` : ''}
+          ${showCrafted ? `<div class="mobile-text" style="position: absolute; bottom: 0; left: 0; background: rgba(0,0,0,0.6); color: white; font-size: 12px; padding: 1px 3px; border-radius: 3px;">${craftedUsed}</div>` : ''}
         </div>
       </li>`;
 
@@ -1313,7 +1307,7 @@ for (const [item, requiredQty] of sortedItems) {
     const bgStyle = `border-bottom: 2px solid${bgColor}; background: linear-gradient(${bgColor}01 50%, ${bgColor}10 ); padding: 4px; border-radius: 6px;`;
     message += `
       <li style="display: inline-block; width: 60px; text-align: center; margin: 5px;" onclick="openGroupModal('${meta.group}')">
-        <div class="mobile-text2" style="font-size: 14px; color: #d5bb88; background-color: black;">${qty} </div>
+        <div class="mobile-text" style="font-size: 14px; color: #d5bb88; background-color: black;">${qty} </div>
         <div style="position: relative; display: inline-block; ${bgStyle}">
           <img src="${iconPath}" alt="${item}" style="width: 50px; height: 50px; border-radius: 4px;">
         </div>
