@@ -573,7 +573,7 @@ if (requiredExp > 0) {
 
     requiredItemsHTML += `
     <li style="display: inline-block; width: 65px; text-align: center; margin: 5px;"  onclick="openGroupModal('${expGroup}')">
-      <div class="mobile-text" style="font-size: 12px; ${hStyle}">  ${formatNumberShort(displayMetQty)} <span style="font-weight: bold;">/</span> ${formatNumberShort(requiredExp)}</div>
+      <div class="mobile-text" style="font-size: 14px; ${hStyle}">  ${formatNumberShort(displayMetQty)} <span style="font-weight: bold;">/</span> ${formatNumberShort(requiredExp)}</div>
         <div style="position: relative; display: inline-block; ${bgStyle}">
         <img src="${expIcon}" alt="EXP" style="${imageStyle}">
       </div>			
@@ -607,7 +607,7 @@ if (totalShellCreditRequired > 0) {
 
     requiredItemsHTML += `
     <li style="display: inline-block; width: 65px; text-align: center; margin: 5px; "onclick="openGroupModal('${meta.group}')">
-      <div class="mobile-text" style="font-size: 12px; ${hStyle}">  ${formatNumberShort(displayMetQty)} <span style="font-weight: bold;">/</span> ${formatNumberShort(totalShellCreditRequired)}</div>
+      <div class="mobile-text" style="font-size: 14px; ${hStyle}">  ${formatNumberShort(displayMetQty)} <span style="font-weight: bold;">/</span> ${formatNumberShort(totalShellCreditRequired)}</div>
         <div style="position: relative; display: inline-block; ${bgStyle}">
         <img src="${iconPath}" alt="Shell Credit"  style="${imageStyle}">
       </div>
