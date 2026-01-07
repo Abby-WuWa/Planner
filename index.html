@@ -50,13 +50,7 @@
      <div class="header"> <div class="modal-buttons" style="text-align: right;">
       <button class="cancel" onclick="closeCharacterSelectModal()"></button></div>
         <div id="elementFilters" style="padding: 10px; text-align: center;" class="filter-buttons">
-          <!-- <button onclick="toggleElementFilter('spectro')">Spectro</button>
-          <button onclick="toggleElementFilter('fusion')">Fusion</button>
-          <button onclick="toggleElementFilter('electro')">Electro</button>
-          <button onclick="toggleElementFilter('aero')">Aero</button>
-          <button onclick="toggleElementFilter('glacio')">Glacio</button>
-          <button onclick="toggleElementFilter('havoc')">Havoc</button>   -->
-
+       
           <button onclick="toggleElementFilter('spectro')" style=" background-color: transparent; border-color: transparent;">
             <img src="./ww_icons/attribute/spectro.png" alt="Spectro" style="width:40px; height:40px; vertical-align:middle; ">
           </button>
@@ -78,8 +72,6 @@
 
         </div>
         <div id="rankFilters" class="filter-buttons" style="text-align: center;" >
-          <!-- <button onclick="toggleRankFilter(1)">Rank 1</button>
-          <button onclick="toggleRankFilter(2)">Rank 2</button> -->
 
            <button onclick="toggleRankFilter(1)" style=" background-color: transparent; border-color: transparent;">
             <img src="./ww_icons/general/five_star.png" alt="Rank 1" style="width:40px; height:40px; vertical-align:middle; ">
@@ -374,8 +366,45 @@
   <!-- Weapon Selection Modal -->
   <div id="weaponModal" class="modal">
     <div class="charContainer">
-     <div class="header">     <div class="modal-buttons" style="text-align: right;">
+     <div class="header"> <div class="modal-buttons" style="text-align: right;">
       <button class="cancel" onclick="closeWeaponSelectModal()"></button></div>
+        <div id="weaponFilters" style="padding: 10px; text-align: center;" class="filter-buttons">
+       
+          <button onclick="toggleWeaponFilter('rectifier')" style=" background-color: transparent; border-color: transparent;">
+            <img src="./ww_icons/weapon/rectifier.webp" alt="Rectifier" style="width:40px; height:40px; vertical-align:middle; ">
+          </button>
+          <button onclick="toggleWeaponFilter('gauntlets')" style=" background-color: transparent; border-color: transparent;">
+            <img src="./ww_icons/weapon/gauntlets.webp" alt="Gauntlets" style="width:40px; height:40px; vertical-align:middle; ">
+          </button>
+          <button onclick="toggleWeaponFilter('pistols')" style=" background-color: transparent; border-color: transparent;">
+            <img src="./ww_icons/weapon/pistols.webp" alt="Pistols" style="width:40px; height:40px; vertical-align:middle; ">
+          </button>
+          <button onclick="toggleWeaponFilter('sword')" style=" background-color: transparent; border-color: transparent;">
+            <img src="./ww_icons/weapon/sword.webp" alt="Sword" style="width:40px; height:40px; vertical-align:middle; ">
+          </button>
+          <button onclick="toggleWeaponFilter('broadblade')" style=" background-color: transparent; border-color: transparent;">
+            <img src="./ww_icons/weapon/broadblade.webp" alt="Broadblade" style="width:40px; height:40px; vertical-align:middle; ">
+          </button>
+
+        </div>
+        <div id="rankWeaponFilters" class="filter-buttons" style="text-align: center;" >
+
+           <button onclick="toggleRankWeaponFilter(5)" style=" background-color: transparent; border-color: transparent;">
+            <img src="./ww_icons/general/five_star.png" alt="Rank 5" style="width:40px; height:40px; vertical-align:middle; ">
+          </button>
+          <button onclick="toggleRankWeaponFilter(4)" style=" background-color: transparent; border-color: transparent;">
+            <img src="./ww_icons/general/four_star.png" alt="Rank 4" style="width:40px; height:40px; vertical-align:middle; ">
+          </button>   
+          <button onclick="toggleRankWeaponFilter(3)" style=" background-color: transparent; border-color: transparent;">
+            <img src="./ww_icons/general/three_star.png" alt="Rank 3" style="width:40px; height:40px; vertical-align:middle; ">
+          </button> 
+          <button onclick="toggleRankWeaponFilter(2)" style=" background-color: transparent; border-color: transparent;">
+            <img src="./ww_icons/general/two_star.png" alt="Rank 2" style="width:40px; height:40px; vertical-align:middle; ">
+          </button> 
+          <button onclick="toggleRankWeaponFilter(1)" style=" background-color: transparent; border-color: transparent;">
+            <img src="./ww_icons/general/one_star.png" alt="Rank 1" style="width:40px; height:40px; vertical-align:middle; ">
+          </button> 
+        </div>
     </div>
      <div class="char">
     <!-- <div class="char-modal-content"> -->
