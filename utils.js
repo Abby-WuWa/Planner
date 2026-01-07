@@ -12,13 +12,14 @@
 
 weapons.sort((a, b) => {
   // First, sort by 'sort' (ascending)
-  if (a.sort !== b.sort) {
-    return a.sort - b.sort;
-  }
-
+  
   // Then by 'rank' (ascending)
   if (a.rank !== b.rank) {
     return b.rank - a.rank;
+  }
+
+  if (a.sort !== b.sort) {
+    return a.sort - b.sort;
   }
 
   // Finally, by 'name' (alphabetical)
@@ -1742,12 +1743,83 @@ updateAllCardsWithPriorityLogic();
 }									
 
 function openWeaponSelectModal() {
+ // Activate rank filters 4 and 5 by default
+  activeRankWeaponFilters.add(4);
+  activeRankWeaponFilters.add(5);
+
+  // Add active class to the correct buttons
+  document.querySelectorAll('#rankWeaponFilters button').forEach(btn => {
+    const img = btn.querySelector('img');
+    if (!img) return;
+
+    if (img.alt.includes('Rank 4') || img.alt.includes('Rank 5')) {
+      btn.classList.add('active');
+    }
+  });
+
   populateWeaponOptions();
   document.getElementById('weaponModal').style.display = 'block';
 }
 
 function closeWeaponSelectModal() {
   document.getElementById('weaponModal').style.display = 'none';
+
+    // Clear group filters
+							   
+      activeWeaponFilters.clear();
+	    activeRankWeaponFilters.clear();							
+
+      // Remove active class from all group filter buttons
+      document.querySelectorAll('#rankWeaponFilters button').forEach(btn => {
+        btn.classList.remove('active');      
+        });
+      document.querySelectorAll('#weaponFilters button').forEach(btn => {
+        btn.classList.remove('active');      
+        });
+}
+
+const activeWeaponFilters = new Set();
+
+function toggleWeaponFilter(wpn) {
+  const button = [...document.querySelectorAll('#weaponFilters button')]
+    .find(btn => {
+      const img = btn.querySelector('img');
+      return img && img.alt.toLowerCase() === wpn;
+    });
+
+  if (!button) return; // Safety check
+
+  if (activeWeaponFilters.has(wpn)) {
+    activeWeaponFilters.delete(wpn);
+    button.classList.remove('active');
+  } else {
+    activeWeaponFilters.add(wpn);
+    button.classList.add('active');
+  }
+
+  populateWeaponOptions(); // Refresh character list
+}
+
+  const activeRankWeaponFilters = new Set();
+
+function toggleRankWeaponFilter(rank) {
+  const button = [...document.querySelectorAll('#rankWeaponFilters button')]
+    .find(btn => {
+      const img = btn.querySelector('img');
+      return img && img.alt.includes(`Rank ${rank}`);
+    });
+
+  if (!button) return; // Safety check
+
+  if (activeRankWeaponFilters.has(rank)) {
+    activeRankWeaponFilters.delete(rank);
+    button.classList.remove('active');
+  } else {
+    activeRankWeaponFilters.add(rank);
+    button.classList.add('active');
+  }
+
+  populateWeaponOptions(); // Refresh character list
 }
 
 function populateWeaponOptions() {
@@ -1766,6 +1838,12 @@ function populateWeaponOptions() {
 
   weapons.forEach(weapon => {
     // if (existingNames.includes(weapon.name)) return;
+
+    // Filter by element if any filters are active
+    if (activeWeaponFilters.size > 0 && !activeWeaponFilters.has(weapon.wpn)) return; 
+    // Rank filter
+    if (activeRankWeaponFilters.size > 0 && !activeRankWeaponFilters.has(weapon.rank)) return;
+
     const div = document.createElement('div');
     div.className = 'character-option';
 
@@ -1897,7 +1975,7 @@ function confirmWeapon() {
   // Clear group filters
 							   
       activeElementFilters.clear();
-	activeRankFilters.clear();							
+	    activeRankFilters.clear();							
 
       // Remove active class from all group filter buttons
       document.querySelectorAll('#rankFilters button').forEach(btn => {
@@ -1973,11 +2051,7 @@ function toggleRankFilter(rank) {
     if (existingNames.includes(char.name)) return; // Skip if already added
 
     // Filter by element if any filters are active
-    if (activeElementFilters.size > 0 && !activeElementFilters.has(char.atrb)) return;
-    
-												  
-																						
-
+    if (activeElementFilters.size > 0 && !activeElementFilters.has(char.atrb)) return; 
     // Rank filter
     if (activeRankFilters.size > 0 && !activeRankFilters.has(char.rank)) return;
 	
@@ -2258,7 +2332,7 @@ if (!isWeapon) {
   <div style="display: flex; gap: 20px; align-items: flex-start;">
     <div>${leftStats}</div>
     <div style="display: flex; flex-direction: row; gap: 20px; align-items: flex-start; ">
-      <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height:170px  ">
+      <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height:191px  ">
         <p><strong>Level:</strong> ${currentLevel} → ${desiredLevel}</p>
         <img src="${data.image}" alt="${name}" style="${bgStyle}; width: 120px; height: 120px; border-radius: 6px; object-fit: cover; margin-top: 5px;">
       </div>
@@ -2273,7 +2347,7 @@ if (!isWeapon) {
       : 
       `
       <div style="display: flex; flex-direction: row; gap: 20px; align-items: flex-start; justify-content: center; ">
-      <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height:170px  ">
+      <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height:191px  ">
         <p><strong>Level:</strong> ${currentLevel} → ${desiredLevel}</p>
     <img src="${data.image}" alt="${name}" style=" ${bgStyle} width: 120px; height: 120px; border-radius: 6px; object-fit: cover;">
     <div>
