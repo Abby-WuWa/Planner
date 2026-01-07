@@ -8,6 +8,14 @@ ws005: [
 { min: '70*', max: '80', items: { 'Shell Credits' : 80000, 'Heterized Metallic Drip': 8, 'FF Howler Core': 4 } },
 { min: '80*', max: '90', items: { 'Shell Credits' : 120000, 'Heterized Metallic Drip': 12, 'FF Howler Core': 8 } },
 ],
+ws015: [
+{ min: '20*', max: '40', items: { 'Shell Credits' : 10000, 'LF Mech Core': 6 } },
+{ min: '40*', max: '50', items: { 'Shell Credits' : 20000, 'Broken Wing Polarizer': 6, 'MF Mech Core': 6 } },
+{ min: '50*', max: '60', items: { 'Shell Credits' : 40000, 'Monowing Polarizer': 8, 'HF Mech Core': 4 } },
+{ min: '60*', max: '70', items: { 'Shell Credits' : 60000, 'Polywing Polarizer': 6, 'HF Mech Core': 6 } },
+{ min: '70*', max: '80', items: { 'Shell Credits' : 80000, 'Layered Wing Polarizer': 8, 'FF Mech Core': 4 } },
+{ min: '80*', max: '90', items: { 'Shell Credits' : 120000, 'Layered Wing Polarizer': 12, 'FF Mech Core': 8 } },
+],
 ws004: [
 { min: '20*', max: '40', items: { 'Shell Credits' : 8000, 'LF Howler Core': 5 } },
 { min: '40*', max: '50', items: { 'Shell Credits' : 16000, 'Inert Metallic Drip': 5, 'MF Howler Core': 5 } },
@@ -46,6 +54,14 @@ wr005: [
 { min: '70*', max: '80', items: { 'Shell Credits' : 80000, 'Presto Helix': 8, 'Tailored Ring': 4 } },
 { min: '80*', max: '90', items: { 'Shell Credits' : 120000, 'Presto Helix': 12, 'Tailored Ring': 8 } },
 ],
+wr015: [
+{ min: '20*', max: '40', items: { 'Shell Credits' : 10000, 'LF Exoswarm Core': 6 } },
+{ min: '40*', max: '50', items: { 'Shell Credits' : 20000, 'Spliced String': 6, 'MF Exoswarm Core': 6 } },
+{ min: '50*', max: '60', items: { 'Shell Credits' : 40000, 'Broken String': 8, 'HF Exoswarm Core': 4 } },
+{ min: '60*', max: '70', items: { 'Shell Credits' : 60000, 'Solidified String': 6, 'HF Exoswarm Core': 6 } },
+{ min: '70*', max: '80', items: { 'Shell Credits' : 80000, 'Melodic String': 8, 'FF Exoswarm Core': 4 } },
+{ min: '80*', max: '90', items: { 'Shell Credits' : 120000, 'Melodic String': 12, 'FF Exoswarm Core': 8 } },
+],
 wr004: [
 { min: '20*', max: '40', items: { 'Shell Credits' : 8000, 'Crude Ring': 5 } },
 { min: '40*', max: '50', items: { 'Shell Credits' : 16000, 'Lento Helix': 5, 'Basic Ring': 5 } },
@@ -74,6 +90,7 @@ wr001: [
 { min: '50*', max: '60', items: { 'Shell Credits' : 8000, 'Adagio Helix': 2, 'Improved Ring': 1 } },
 { min: '60*', max: '70', items: { 'Shell Credits' : 12000, 'Andante Helix': 2, 'Improved Ring': 2 } },
 ],
+
 //Gauntlets
 wg005: [
 { min: '20*', max: '40', items: { 'Shell Credits' : 10000, 'LF Howler Core': 6 } },
@@ -82,6 +99,14 @@ wg005: [
 { min: '60*', max: '70', items: { 'Shell Credits' : 60000, 'Cadence Leaf': 6, 'HF Howler Core': 6 } },
 { min: '70*', max: '80', items: { 'Shell Credits' : 80000, 'Cadence Blossom': 8, 'FF Howler Core': 4 } },
 { min: '80*', max: '90', items: { 'Shell Credits' : 120000, 'Cadence Blossom': 12, 'FF Howler Core': 8 } },
+],
+wg015: [
+{ min: '20*', max: '40', items: { 'Shell Credits' : 10000, 'LF Mech Core': 6 } },
+{ min: '40*', max: '50', items: { 'Shell Credits' : 20000, 'LF Waveworn Shard': 6, 'MF Mech Core': 6 } },
+{ min: '50*', max: '60', items: { 'Shell Credits' : 40000, 'MF Waveworn Shard': 8, 'HF Mech Core': 4 } },
+{ min: '60*', max: '70', items: { 'Shell Credits' : 60000, 'HF Waveworn Shard': 6, 'HF Mech Core': 6 } },
+{ min: '70*', max: '80', items: { 'Shell Credits' : 80000, 'FF Waveworn Shard': 8, 'FF Mech Core': 4 } },
+{ min: '80*', max: '90', items: { 'Shell Credits' : 120000, 'FF Waveworn Shard': 12, 'FF Mech Core': 8 } },
 ],
 wg004: [
 { min: '20*', max: '40', items: { 'Shell Credits' : 8000, 'LF Howler Core': 5 } },
@@ -111,14 +136,23 @@ wg001: [
 { min: '50*', max: '60', items: { 'Shell Credits' : 8000, 'Cadence Bud': 2, 'HF Howler Core': 1 } },
 { min: '60*', max: '70', items: { 'Shell Credits' : 12000, 'Cadence Leaf': 2, 'HF Howler Core': 2 } },
 ],
+
 //Pistols
-wp0005: [
+wp005: [
 { min: '20*', max: '40', items: { 'Shell Credits' : 10000, 'Crude Ring': 6 } },
 { min: '40*', max: '50', items: { 'Shell Credits' : 20000, 'Impure Phlogiston': 6, 'Basic Ring': 6 } },
 { min: '50*', max: '60', items: { 'Shell Credits' : 40000, 'Extracted Phlogiston': 8, 'Improved Ring': 4 } },
 { min: '60*', max: '70', items: { 'Shell Credits' : 60000, 'Refined Phlogiston': 6, 'Improved Ring': 6 } },
 { min: '70*', max: '80', items: { 'Shell Credits' : 80000, 'Flawless Phlogiston': 8, 'Tailored Ring': 4 } },
 { min: '80*', max: '90', items: { 'Shell Credits' : 120000, 'Flawless Phlogiston': 12, 'Tailored Ring': 8 } },
+],
+wp015: [
+{ min: '20*', max: '40', items: { 'Shell Credits' : 10000, 'Fractured Exoswarm Pendant': 6 } },
+{ min: '40*', max: '50', items: { 'Shell Credits' : 20000, 'Incomplete Combustor': 6, 'Worn Exoswarm Pendant': 6 } },
+{ min: '50*', max: '60', items: { 'Shell Credits' : 40000, 'Aftertune Combustor': 8, 'Chipped Exoswarm Pendant': 4 } },
+{ min: '60*', max: '70', items: { 'Shell Credits' : 60000, 'Remnant Combustor': 6, 'Chipped Exoswarm Pendant': 6 } },
+{ min: '70*', max: '80', items: { 'Shell Credits' : 80000, 'Reverb Combustor': 8, 'Intact Exoswarm Pendant': 4 } },
+{ min: '80*', max: '90', items: { 'Shell Credits' : 120000, 'Reverb Combustor': 12, 'Intact Exoswarm Pendant': 8 } },
 ],
 wp004: [
 { min: '20*', max: '40', items: { 'Shell Credits' : 8000, 'Crude Ring': 5 } },
@@ -148,6 +182,7 @@ wp001: [
 { min: '50*', max: '60', items: { 'Shell Credits' : 8000, 'Extracted Phlogiston': 2, 'Improved Ring': 1 } },
 { min: '60*', max: '70', items: { 'Shell Credits' : 12000, 'Refined Phlogiston': 2, 'Improved Ring': 2 } },
 ],
+
 //Broadblade
 wb005: [
 { min: '20*', max: '40', items: { 'Shell Credits' : 10000, 'LF Whisperin Core': 6 } },
@@ -156,6 +191,14 @@ wb005: [
 { min: '60*', max: '70', items: { 'Shell Credits' : 60000, 'Waveworn Residue 235': 6, 'HF Whisperin Core': 6 } },
 { min: '70*', max: '80', items: { 'Shell Credits' : 80000, 'Waveworn Residue 239': 8, 'FF Whisperin Core': 4 } },
 { min: '80*', max: '90', items: { 'Shell Credits' : 120000, 'Waveworn Residue 239': 12, 'FF Whisperin Core': 8 } },
+],
+wb015: [
+{ min: '20*', max: '40', items: { 'Shell Credits' : 10000, 'Fractured Exoswarm Pendant': 6 } },
+{ min: '40*', max: '50', items: { 'Shell Credits' : 20000, 'LF Carved Crystal': 6, 'Worn Exoswarm Pendant': 6 } },
+{ min: '50*', max: '60', items: { 'Shell Credits' : 40000, 'MF Carved Crystal': 8, 'Chipped Exoswarm Pendant': 4 } },
+{ min: '60*', max: '70', items: { 'Shell Credits' : 60000, 'HF Carved Crystal': 6, 'Chipped Exoswarm Pendant': 6 } },
+{ min: '70*', max: '80', items: { 'Shell Credits' : 80000, 'FF Carved Crystal': 8, 'Intact Exoswarm Pendant': 4 } },
+{ min: '80*', max: '90', items: { 'Shell Credits' : 120000, 'FF Carved Crystal': 12, 'Intact Exoswarm Pendant': 8 } },
 ],
 wb004: [
 { min: '20*', max: '40', items: { 'Shell Credits' : 8000, 'LF Whisperin Core': 5 } },
