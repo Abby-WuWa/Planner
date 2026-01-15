@@ -2920,23 +2920,29 @@ function savePriorityOrder() {
 
 
 
-function enableDragAndDrop() { /*new*/
+function enableDragAndDrop() {
   const list = document.getElementById('priorityList');
   let draggedItem = null;
+  let pointerId = null;
 
+  // ---- Mouse / classic DnD (desktop) ----
   list.addEventListener('dragstart', (e) => {
-    e.target.classList.add('dragging'); 
+    if (!e.target.classList.contains('draggable-item')) return;
+    e.target.classList.add('dragging');
     draggedItem = e.target;
-    e.target.style.opacity = '1';
+    e.dataTransfer?.setData('text/plain', e.target.dataset.uniqueId || '');
+    e.dataTransfer?.setDragImage?.(new Image(), 0, 0); // optional: hide default ghost
   });
 
   list.addEventListener('dragend', (e) => {
-    e.target.classList.remove('dragging'); 
-    e.target.style.opacity = '';
+    if (!e.target.classList.contains('draggable-item')) return;
+    e.target.classList.remove('dragging');
+    draggedItem = null;
   });
 
   list.addEventListener('dragover', (e) => {
     e.preventDefault();
+    if (!draggedItem) return;
     const afterElement = getDragAfterElement(list, e.clientY);
     if (afterElement == null) {
       list.appendChild(draggedItem);
@@ -2944,7 +2950,80 @@ function enableDragAndDrop() { /*new*/
       list.insertBefore(draggedItem, afterElement);
     }
   });
+
+  // ---- Pointer Events (mobile & desktop) ----
+  // Uses pointerdown / pointermove / pointerup so it works on touchscreens.
+  list.addEventListener('pointerdown', (e) => {
+    const li = e.target.closest('.draggable-item');
+    if (!li) return;
+    pointerId = e.pointerId;
+    draggedItem = li;
+    draggedItem.classList.add('dragging');
+
+    // Capture pointer to continue receiving events even if it moves off the item
+    draggedItem.setPointerCapture?.(pointerId);
+
+    // Prevent scrolling while dragging with touch
+    e.preventDefault();
+  }, { passive: false });
+
+  list.addEventListener('pointermove', (e) => {
+    if (!draggedItem || e.pointerId !== pointerId) return;
+
+    // Position where the pointer is
+    const clientX = e.clientX;
+    const clientY = e.clientY;
+
+    // Find the item under the finger and compute insertion point
+    const afterElement = getAfterElementByPoint(list, clientY);
+
+    if (afterElement == null) {
+      list.appendChild(draggedItem);
+    } else {
+      list.insertBefore(draggedItem, afterElement);
+    }
+
+    autoScrollWhileDragging(list, clientY);
+    e.preventDefault();
+  }, { passive: false });
+
+  list.addEventListener('pointerup', (e) => {
+    if (!draggedItem || e.pointerId !== pointerId) return;
+    draggedItem.classList.remove('dragging');
+    draggedItem.releasePointerCapture?.(pointerId);
+    draggedItem = null;
+    pointerId = null;
+  });
+
+  // ---- Helpers ----
+  function getAfterElementByPoint(container, y) {
+    const items = [...container.querySelectorAll('.draggable-item:not(.dragging)')];
+    let closest = { offset: Number.NEGATIVE_INFINITY, element: null };
+
+    for (const child of items) {
+      const box = child.getBoundingClientRect();
+      const offset = y - (box.top + box.height / 2);
+      if (offset < 0 && offset > closest.offset) {
+        closest = { offset, element: child };
+      }
+    }
+    return closest.element;
+  }
+
+  // Optional: auto-scroll the container when dragging near edges
+  function autoScrollWhileDragging(container, pointerY) {
+    const rect = container.getBoundingClientRect();
+    const threshold = 32; // px from edges to start scrolling
+    const speed = 12;     // px per frame, tune as needed
+
+    if (pointerY < rect.top + threshold) {
+      container.scrollTop -= speed;
+    } else if (pointerY > rect.bottom - threshold) {
+      container.scrollTop += speed;
+    }
+  }
 }
+
 
 function getDragAfterElement(container, y) { /*new*/
   const draggableElements = [...container.querySelectorAll('.draggable-item:not(.dragging)')];
@@ -3165,3 +3244,4 @@ function sortCharacterCards() {
       if (btn) btn.style.opacity = '50%';
     });
   }							   
+
