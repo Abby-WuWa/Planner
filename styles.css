@@ -864,5 +864,16 @@
     text-align: center;
 }
 
+ 
+/* Prevent browser gestures while dragging on touch */
+#priorityList {
+  touch-action: none;
+}
+.draggable-item.dragging {
+  opacity: 0.6;
+}
+
+
+
 
 
