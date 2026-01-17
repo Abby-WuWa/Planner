@@ -906,6 +906,12 @@
   
 }
 
+    @media(max-width:1190px) {
+            .fittext {
+  height: 18px;
+  line-height: 18px; /* matches height for vertical centering */   
+      }
+    }
  
 /* Prevent browser gestures while dragging on touch */
 #priorityList {
@@ -914,9 +920,3 @@
 .draggable-item.dragging {
   opacity: 0.6;
 }
-
-
-
-
-
-
