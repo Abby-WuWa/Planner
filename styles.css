@@ -79,7 +79,7 @@
 
       .right-half .character-card {
       font-size: 1.07rem;
-      height: 635px;
+      height: 625px;
       width: 460px;
     }
 
@@ -101,7 +101,7 @@
       border-radius: 8px;
       color: #d5bb88;
       width: 430px;
-      height: 600px;
+      height: 580px;
       box-shadow: 1px 0px 5px #d5bb88;
       overflow: hidden;
       font-size: 16px;
@@ -475,7 +475,7 @@
       /* padding: 10px 0 0 0; */
       padding: 1px 0 0 0;
       width: 500px;
-      height: 200px;
+      height: 250px;
       box-sizing: border-box;
       position: relative;
 }
@@ -653,7 +653,7 @@
   background-image: url("./ww_icons/pop1-25c3fab7.png"); 
   background-repeat: no-repeat;
       background-size: 100% 100%;
-  padding: 30px 10px 45px 10px;
+  padding: 30px 10px 65px 10px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -864,6 +864,48 @@
     text-align: center;
 }
 
+/* parent list uses flex so items wrap to new rows */
+.required-items-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0;              /* your <li> already has margin:10px */
+}
+
+/* each tile: DO NOT SHRINK and always 60px wide */
+.required-item {
+  /* Hard lock in flex: grow=0, shrink=0, basis=60px */
+  flex: 0 0 65px;
+  /* Additionally protect via min/max */
+  min-width: 65px;
+  max-width: 65px;
+
+  /* normal tile props */
+  display: flex;
+  flex-direction: column;
+  width: 65px;           /* final belt-and-braces width */
+  text-align: center;
+  margin: 5px;
+  box-sizing: border-box;
+}
+
+
+.fittext {
+  display: block;
+  width: 100%;
+  height: 16.65px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  line-height: 16.65px; /* matches height for vertical centering */
+  font-size: 14px;
+  overflow: hidden;
+  text-align: center; /* optional: center horizontally */
+  
+}
+
  
 /* Prevent browser gestures while dragging on touch */
 #priorityList {
@@ -872,6 +914,7 @@
 .draggable-item.dragging {
   opacity: 0.6;
 }
+
 
 
 
