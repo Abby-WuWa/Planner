@@ -1,4 +1,15 @@
 const skillRequirements = { 
+aemeath_req: [
+{ from: 1, to: 2, items: { 'Shell Credits': 1500, 'Broken Wing Polarizer': 2, 'LF Exoswarm Core': 2 } },
+{ from: 2, to: 3, items: { 'Shell Credits': 2000, 'Broken Wing Polarizer': 3, 'LF Exoswarm Core': 3 } },
+{ from: 3, to: 4, items: { 'Shell Credits': 4500, 'Monowing Polarizer': 2, 'MF Exoswarm Core': 2 } },
+{ from: 4, to: 5, items: { 'Shell Credits': 6000, 'Monowing Polarizer': 3, 'MF Exoswarm Core': 3 } },
+{ from: 5, to: 6, items: { 'Shell Credits': 16000, 'Polywing Polarizer': 3, 'HF Exoswarm Core': 2 } },
+{ from: 6, to: 7, items: { 'Shell Credits': 30000, 'Polywing Polarizer': 5, 'HF Exoswarm Core': 3, "TBC_weekly": 1 } },
+{ from: 7, to: 8, items: { 'Shell Credits': 50000, 'Layered Wing Polarizer': 2, 'FF Exoswarm Core': 2, "TBC_weekly": 1 } },
+{ from: 8, to: 9, items: { 'Shell Credits': 70000, 'Layered Wing Polarizer': 3, 'FF Exoswarm Core': 3, "TBC_weekly": 1 } },
+{ from: 9, to: 10, items: { 'Shell Credits': 100000, 'Layered Wing Polarizer': 6, 'FF Exoswarm Core': 4, "TBC_weekly": 1 } }
+],
 augusta_req: [
 { from: 1, to: 2, items: { 'Shell Credits': 1500, 'Waveworn Residue 210': 2, 'LF Tidal Residuum': 2 } },
 { from: 2, to: 3, items: { 'Shell Credits': 2000, 'Waveworn Residue 210': 3, 'LF Tidal Residuum': 3 } },
@@ -207,6 +218,17 @@ lupa_req: [
 { from: 7, to: 8, items: { 'Shell Credits': 50000, 'Waveworn Residue 239': 2, 'FF Howler Core': 2, "The Netherworld's Stare": 1 } },
 { from: 8, to: 9, items: { 'Shell Credits': 70000, 'Waveworn Residue 239': 3, 'FF Howler Core': 3, "The Netherworld's Stare": 1 } },
 { from: 9, to: 10,items: { 'Shell Credits': 100000, 'Waveworn Residue 239': 6, 'FF Howler Core': 4, "The Netherworld's Stare": 1 } },
+],
+luuk_req: [
+{ from: 1, to: 2, items: { 'Shell Credits': 1500, 'LF Waveworn Shard': 2, 'Fractured Exoswarm Pendant': 2 } },
+{ from: 2, to: 3, items: { 'Shell Credits': 2000, 'LF Waveworn Shard': 3, 'Fractured Exoswarm Pendant': 3 } },
+{ from: 3, to: 4, items: { 'Shell Credits': 4500, 'MF Waveworn Shard': 2, 'Worn Exoswarm Pendant': 2 } },
+{ from: 4, to: 5, items: { 'Shell Credits': 6000, 'MF Waveworn Shard': 3, 'Worn Exoswarm Pendant': 3 } },
+{ from: 5, to: 6, items: { 'Shell Credits': 16000, 'HF Waveworn Shard': 3, 'Chipped Exoswarm Pendant': 2 } },
+{ from: 6, to: 7, items: { 'Shell Credits': 30000, 'HF Waveworn Shard': 5, 'Chipped Exoswarm Pendant': 3, "TBC_weekly": 1 } },
+{ from: 7, to: 8, items: { 'Shell Credits': 50000, 'FF Waveworn Shard': 2, 'Intact Exoswarm Pendant': 2, "TBC_weekly": 1 } },
+{ from: 8, to: 9, items: { 'Shell Credits': 70000, 'FF Waveworn Shard': 3, 'Intact Exoswarm Pendant': 3, "TBC_weekly": 1 } },
+{ from: 9, to: 10, items: { 'Shell Credits': 100000, 'FF Waveworn Shard': 6, 'Intact Exoswarm Pendant': 4, "TBC_weekly": 1 } }
 ],
 lynae_req: [
 { from: 1, to: 2, items: { 'Shell Credits': 1500, 'Incomplete Combustor': 2, 'LF Exoswarm Core': 2 } },
