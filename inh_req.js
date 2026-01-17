@@ -1,4 +1,8 @@
 const inherentRequirements = {
+aemeath_req: [
+{ from: 0, to: 1, items: { 'Shell Credits': 10000, 'Monowing Polarizer': 3, 'MF Exoswarm Core': 3, "TBC_weekly": 1 } },
+{ from: 1, to: 2, items: { 'Shell Credits': 20000, 'Polywing Polarizer': 3, 'HF Exoswarm Core': 3, "TBC_weekly": 1 } }
+],
 augusta_req: [
 { from: 0, to: 1, items: { 'Shell Credits': 10000, 'Waveworn Residue 226': 3, 'MF Tidal Residuum': 3, "When Irises Bloom": 1 } },
 { from: 1, to: 2, items: { 'Shell Credits': 20000, 'Waveworn Residue 235': 3, 'HF Tidal Residuum': 3, "When Irises Bloom": 1 } }
@@ -70,6 +74,10 @@ lingyang_req: [
 lupa_req: [
 { from: 0, to: 1, items: { 'Shell Credits': 10000, 'Waveworn Residue 226': 3, 'MF Howler Core': 3, "The Netherworld's Stare": 1 } },
 { from: 1, to: 2, items: { 'Shell Credits': 20000, 'Waveworn Residue 235': 3, 'HF Howler Core': 3, "The Netherworld's Stare": 1 } }
+],
+luuk_req: [
+{ from: 0, to: 1, items: { 'Shell Credits': 10000, 'MF Waveworn Shard': 3, 'Worn Exoswarm Pendant': 3, "TBC_weekly": 1 } },
+{ from: 1, to: 2, items: { 'Shell Credits': 20000, 'HF Waveworn Shard': 3, 'Chipped Exoswarm Pendant': 3, "TBC_weekly": 1 } }
 ],
 lynae_req: [
 { from: 0, to: 1, items: { 'Shell Credits': 10000, 'Aftertune Combustor': 3, 'MF Exoswarm Core': 3, "Dreamless Feather": 1 } },
