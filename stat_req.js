@@ -1,4 +1,8 @@
 const statRequirements = {
+aemeath_req: [
+{ from: 0, to: 1, items: { 'Shell Credits': 50000, 'Polywing Polarizer': 3, 'HF Exoswarm Core': 3 } },
+{ from: 1, to: 2, items: { 'Shell Credits': 100000, 'Layered Wing Polarizer': 3, 'FF Exoswarm Core': 3, "TBC_weekly": 1 } }
+],
 augusta_req: [
 { from: 0, to: 1, items: { 'Shell Credits': 50000, 'Waveworn Residue 235': 3, 'HF Tidal Residuum': 3 } },
 { from: 1, to: 2, items: { 'Shell Credits': 100000, 'Waveworn Residue 239': 3, 'FF Tidal Residuum': 3, "When Irises Bloom": 1 } }
@@ -74,6 +78,10 @@ lingyang_req: [
 lupa_req: [
 { from: 0, to: 1, items: { 'Shell Credits': 50000, 'Waveworn Residue 235': 3, 'HF Howler Core': 3 } },
 { from: 1, to: 2, items: { 'Shell Credits': 100000, 'Waveworn Residue 239': 3, 'FF Howler Core': 3, "The Netherworld's Stare": 1 } }
+],
+luuk_req: [
+{ from: 0, to: 1, items: { 'Shell Credits': 50000, 'HF Waveworn Shard': 3, 'Chipped Exoswarm Pendant': 3 } },
+{ from: 1, to: 2, items: { 'Shell Credits': 100000, 'FF Waveworn Shard': 3, 'Intact Exoswarm Pendant': 3, "TBC_weekly": 1 } }
 ],
 lynae_req: [
 { from: 0, to: 1, items: { 'Shell Credits': 50000, 'Remnant Combustor': 3, 'HF Exoswarm Core': 3 } },
