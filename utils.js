@@ -1,5 +1,25 @@
  let selectedWeapon = '';
  let selectedCharacter = '';
+
+  function shrinkToFit(el, { max = 14, min = 8, step = 0.5, padding = 0 } = {}) {
+  el.style.display = 'block';
+  el.style.width = '100%';
+  el.style.boxSizing = 'border-box';
+  el.style.whiteSpace = 'nowrap';
+  el.style.overflow = 'hidden';
+
+  // Measure the locked tile (<li>)
+  const tile = el.closest('li') || el.parentElement;
+  const base = tile?.offsetWidth || 65;     // offsetWidth includes borders
+  const targetWidth = Math.max(65, base) - padding;
+
+  let size = max;
+  el.style.fontSize = `${size}px`;
+  while (el.scrollWidth > targetWidth && size > min) {
+    size -= step;
+    el.style.fontSize = `${size}px`;
+  }
+}
  
  characters.sort((a, b) => {
   // First, sort by rank (ascending)
@@ -511,7 +531,7 @@ result = {
 
 																								
 
-  let requiredItemsHTML = '<div class="required-items" style="text-align: center; padding: 5px 10px;">';
+let requiredItemsHTML = '<div class="required-items" style="text-align: center; padding: 5px 10px;">';
   requiredItemsHTML += '<ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; justify-content: center;">';
 
   const sortedItems = Object.entries(totalItems).sort(([a], [b]) => {
@@ -573,8 +593,8 @@ if (requiredExp > 0) {
 		const hStyle = `${(!isOff && metExp >= requiredExp) ? 'background-color: #292929ff; filter: brightness(30%);' : 'background-color: black;'}`;
 
     requiredItemsHTML += `
-    <li style="display: inline-block; width: 65px; text-align: center; margin: 5px;"  onclick="openGroupModal('${expGroup}')">
-      <div class="mobile-text" style="font-size: 14px; ${hStyle}">  ${formatNumberShort(displayMetQty)} <span style="font-weight: bold;">/</span> ${formatNumberShort(requiredExp)}</div>
+    <li class="required-item" onclick="openGroupModal('${expGroup}')">
+      <div class="fittext" class="mobile-text" style=" ${hStyle}">  ${formatNumberShort(displayMetQty)} <span style="font-weight: bold;">/</span> ${formatNumberShort(requiredExp)}</div>
         <div style="position: relative; display: inline-block; ${bgStyle}">
         <img src="${expIcon}" alt="EXP" style="${imageStyle}">
       </div>			
@@ -607,8 +627,8 @@ if (totalShellCreditRequired > 0) {
   const imageStyle = `width: 55px; height: 55px;${(!isOff && metQty >= totalShellCreditRequired) ? ' filter: brightness(70%);' : ''}`;
 
     requiredItemsHTML += `
-    <li style="display: inline-block; width: 65px; text-align: center; margin: 5px; "onclick="openGroupModal('${meta.group}')">
-      <div class="mobile-text" style="font-size: 14px; ${hStyle}">  ${formatNumberShort(displayMetQty)} <span style="font-weight: bold;">/</span> ${formatNumberShort(totalShellCreditRequired)}</div>
+    <li class="required-item" onclick="openGroupModal('${meta.group}')">
+      <div class="fittext" class="mobile-text" style=" ${hStyle}">  ${formatNumberShort(displayMetQty)} <span style="font-weight: bold;">/</span> ${formatNumberShort(totalShellCreditRequired)}</div>
         <div style="position: relative; display: inline-block; ${bgStyle}">
         <img src="${iconPath}" alt="Shell Credit"  style="${imageStyle}">
       </div>
@@ -658,10 +678,10 @@ if (totalShellCreditRequired > 0) {
 
   requiredItemsHTML += '</ul></div>';
 
-  const oldSection = card.querySelector('.required-items');
-  if (oldSection) {
-    oldSection.outerHTML = requiredItemsHTML;
-  }
+const oldSection = card.querySelector('.required-items');
+if (oldSection) oldSection.outerHTML = requiredItemsHTML;
+const labels = card.querySelectorAll('.required-items .fittext');
+labels.forEach(lbl => shrinkToFit(lbl, { max: 14, min: 8, step: 0.5 }));
 });
 
 const summaryHTML = generateMissingItemsSummary(results, itemMetadata);
@@ -704,10 +724,6 @@ function generateMissingItemsSummary(results, itemMetadata) {
       totalMissing[item] = (totalMissing[item] ?? 0) + netMissing;
     }
   }
-
-																   
-														 
-   
 
   if (result.isWeapon) {
     totalWeaponExpShortfall += result.expShortfall ?? 0;
@@ -768,8 +784,6 @@ if ((totalCharacterExpShortfall > 0 || totalWeaponExpShortfall > 0) && !groupedB
         <div class="mobile-text2" style="font-size: 14px; color: #d5bb88; background-color: black;">${formatNumberShort(totalWeaponExpShortfall)}</div>
           <div style="position: relative; display: inline-block; ${bgStyle}">
             <img src="./ww_icons/general/Premium_Energy_Core.png" alt="EXP" style="width: 50px; height: 50px; border-radius: 4px; color: #d5bb88;">
-																		  
-																				  
 																				
           </div>
 			  
@@ -1268,8 +1282,8 @@ for (const [item, requiredQty] of sortedItems) {
     const imageStyle = `width: 55px; height: 55px; border-radius: 4px;`;
 
     breakdownHTML += `
-      <li style="display: inline-block; width: 65px; text-align: center; margin: 5px;" onclick="openGroupModal('${meta.group}')">
-        <div class="mobile-text" style="font-size: 14px; background-color: black; color: ${metQty >= requiredQty ? 'green' : 'red'};">${formatNumberShort(metQty)} <span style="font-weight: bold;">/</span> ${formatNumberShort(requiredQty)}</div>
+      <li class="required-item" onclick="openGroupModal('${meta.group}')">
+        <div class="fittext" class="mobile-text" style=" background-color: black; color: ${metQty >= requiredQty ? 'green' : 'red'};">${formatNumberShort(metQty)} <span style="font-weight: bold;">/</span> ${formatNumberShort(requiredQty)}</div>
         <div style="position: relative; display: inline-block;  ${bgStyle}; ">
           <img src="${iconPath}" alt="${item}" style="${imageStyle}">
           ${showCrafted ? `<div class="mobile-text" style="position: absolute; bottom: 0; left: 0; background: rgba(0,0,0,0.6); color: white; font-size: 12px; padding: 1px 3px; border-radius: 3px;">${craftedUsed}</div>` : ''}
@@ -1317,7 +1331,13 @@ for (const [item, requiredQty] of sortedItems) {
   }
   message += '</ul>';
 
-  document.getElementById('craftableContent').innerHTML = breakdownHTML + message;
+document.getElementById('craftableContent').innerHTML = breakdownHTML + message;
+
+// 🔥 Apply shrinkToFit to all labels inside the crafting modal
+requestAnimationFrame(() => {
+  const labels = document.querySelectorAll('#craftableContent .fittext');
+  labels.forEach(lbl => shrinkToFit(lbl, { max: 14, min: 8, step: 0.5 }));
+});
 
   console.log("selectedCharacter:", selectedCharacter);
   console.log("Skills:", skills);
@@ -1466,7 +1486,21 @@ function openGroupModal(group) {
     .sort(([, a], [, b]) => (b.rank ?? 0) - (a.rank ?? 0));
 
 const container = document.getElementById('groupItemsContainer');
+
+
+  // 🔹 NEW: derive a human-friendly title for this group from inventory metadata
+  const groupTitle =
+    itemsInGroup.length > 0
+      ? (itemsInGroup[0][1].title || group)
+      : group;
+
+  // (Optional) normalize known EXP group codes to friendlier names
+  const headerTitle = groupTitle;
+
 container.innerHTML = `
+<div style="text-align:center; margin-bottom:8px;">
+      <h3 style="margin:0; font-weight:600;">${headerTitle}</h3>
+    </div>
   <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
     ${itemsInGroup.map(([item, meta]) => {
       const qty = inventory[item] ?? 0;
@@ -1505,7 +1539,12 @@ itemsInGroup.forEach(([item]) => {
     });
   }
 });
+// 🔹 New: horizontal tab order
+const mainInputs = Array.from(container.querySelectorAll("input[id^='inv_']"));
+mainInputs.forEach((el, i) => el.setAttribute('tabindex', String(i + 1)));
 
+const addInputs = Array.from(container.querySelectorAll("input[id^='add_']"));
+addInputs.forEach((el, i) => el.setAttribute('tabindex', String(mainInputs.length + i + 1)));
 
   document.getElementById('groupModal').style.display = 'block';
 }
@@ -2918,8 +2957,6 @@ function savePriorityOrder() {
 }
 
 
-
-
 function enableDragAndDrop() {
   const list = document.getElementById('priorityList');
   let draggedItem = null;
@@ -3095,10 +3132,11 @@ function openInventoryModal() {
 
   Object.keys(itemMetadata).forEach(item => {
   if (item === shellItem) return;
-  if (item === "TBC1") return; 
-  if (item === "TBC2") return; 
-  if (item === "TBC3") return; 
-  if (item === "TBC4") return; 
+  if (item === "TBC_enemy") return; 
+  if (item === "TBC_boss") return; 
+  if (item === "TBC_domain") return; 
+  if (item === "TBC_flower") return; 
+  if (item === "TBC_weekly") return; 
 
 const category = itemMetadata[item].category;
 
@@ -3244,4 +3282,3 @@ function sortCharacterCards() {
       if (btn) btn.style.opacity = '50%';
     });
   }							   
-
