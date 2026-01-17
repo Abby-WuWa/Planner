@@ -1,4 +1,12 @@
 const levelRequirements = {
+aemeath_req: [
+{ min: '20*', max: '40', items: { 'Shell Credits' : 5000, 'LF Exoswarm Core': 4 } },
+{ min: '40*', max: '50', items: { 'Shell Credits' : 10000, "TBC_boss": 3, "TBC_flower": 4, 'MF Exoswarm Core': 4 } },
+{ min: '50*', max: '60', items: { 'Shell Credits' : 15000, "TBC_boss": 6, "TBC_flower": 8, 'MF Exoswarm Core': 8 } },
+{ min: '60*', max: '70', items: { 'Shell Credits' : 20000, "TBC_boss": 9, "TBC_flower": 12, 'HF Exoswarm Core': 4 } },
+{ min: '70*', max: '80', items: { 'Shell Credits' : 40000, "TBC_boss": 12, "TBC_flower": 16, 'HF Exoswarm Core': 8 } },
+{ min: '80*', max: '90', items: { 'Shell Credits' : 80000, "TBC_boss": 16, "TBC_flower": 20, 'FF Exoswarm Core': 4 } }
+],
 augusta_req: [
 { min: '20*', max: '40', items: { 'Shell Credits' : 5000, 'LF Tidal Residuum': 4 } },
 { min: '40*', max: '50', items: { 'Shell Credits' : 10000, 'Blighted Crown of Puppet King': 3, 'Luminous Calendula': 4, 'MF Tidal Residuum': 4 } },
@@ -142,6 +150,14 @@ lupa_req: [
 { min: '60*', max: '70', items: { 'Shell Credits' : 20000, 'Unfading Glory': 9, "Bloodleaf Viburnum": 12, 'HF Howler Core': 4 } },
 { min: '70*', max: '80', items: { 'Shell Credits' : 40000, 'Unfading Glory': 12, "Bloodleaf Viburnum": 16, 'HF Howler Core': 8 } },
 { min: '80*', max: '90', items: { 'Shell Credits' : 80000, 'Unfading Glory': 16, "Bloodleaf Viburnum": 20, 'FF Howler Core': 4 } }
+],
+luuk_req: [
+{ min: '20*', max: '40', items: { 'Shell Credits' : 5000, 'Fractured Exoswarm Pendant': 4 } },
+{ min: '40*', max: '50', items: { 'Shell Credits' : 10000, "Suncoveter's Reach": 3, "TBC_flower": 4, 'Worn Exoswarm Pendant': 4 } },
+{ min: '50*', max: '60', items: { 'Shell Credits' : 15000, "Suncoveter's Reach": 6, "TBC_flower": 8, 'Worn Exoswarm Pendant': 8 } },
+{ min: '60*', max: '70', items: { 'Shell Credits' : 20000, "Suncoveter's Reach": 9, "TBC_flower": 12, 'Chipped Exoswarm Pendant': 4 } },
+{ min: '70*', max: '80', items: { 'Shell Credits' : 40000, "Suncoveter's Reach": 12, "TBC_flower": 16, 'Chipped Exoswarm Pendant': 8 } },
+{ min: '80*', max: '90', items: { 'Shell Credits' : 80000, "Suncoveter's Reach": 16, "TBC_flower": 20, 'Intact Exoswarm Pendant': 4 } }
 ],
 lynae_req: [
 { min: '20*', max: '40', items: { 'Shell Credits' : 5000, 'LF Exoswarm Core': 4 } },
