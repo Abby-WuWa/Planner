@@ -1,5 +1,13 @@
 const characters = [
     {
+    name: "Aemeath",
+    image: "ww_icons/char/aemeath_icon.webp",
+    rank: 1,
+    atrb: "fusion",
+    wpn: "sword",
+    jsid: "aemeath_req"
+  },  
+  {
     name: "Augusta",
     image: "ww_icons/char/augusta_icon.webp",
     rank: 1,
@@ -214,6 +222,14 @@ const characters = [
     atrb: "fusion",
     wpn: "boradblade",
     jsid: "lupa_req"
+  },
+  {
+    name: "Luuk",
+    image: "ww_icons/char/luuk_icon.webp",
+    rank: 1,
+    atrb: "spectro",
+    wpn: "gauntlets",
+    jsid: "luuk_req"
   },
   {
     name: "Lynae",
