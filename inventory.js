@@ -58,6 +58,7 @@ const itemMetadata = {
 "The Netherworld's Stare": { title: "The Netherworld's Stare", group: "ce", category: "weekly", rank: 3, image: "ww_icons/skill_mat/the_netherworlds_stare.webp"},
 "When Irises Bloom": { title: "When Irises Bloom", group: "cf", category: "weekly", rank: 3, image: "ww_icons/skill_mat/when_irises_bloom.webp"},
 "Curse of the Abyss": { title: "Curse of the Abyss", group: "cg", category: "weekly", rank: 3, image: "ww_icons/skill_mat/curse_of_the_abyss.webp"},
+"Gold in Memory": { title: "Gold in Memory", group: "ch", category: "weekly", rank: 3, image: "ww_icons/skill_mat/gold_in_memory.webp"},
 
 /*Boss Material*/
 "TBC_boss": { title: "TBC Boss", group: "d", category: "boss", rank: 3, image: "ww_icons/res_mat/TBC_boss.webp"},
@@ -80,6 +81,7 @@ const itemMetadata = {
 "Abyssal Husk": { title: "Abyssal Husk", group: "dq", category: "boss", rank: 3, image: "ww_icons/res_mat/abyssal_husk.webp"},
 "Suncoveter's Reach": { title: "Suncoveter's Reach", group: "dr", category: "boss", rank: 3, image: "ww_icons/res_mat/suncoveters_reach.webp"},
 "Burning Judgment": { title: "Burning Judgment", group: "ds", category: "boss", rank: 3, image: "ww_icons/res_mat/burning_judgment.webp"},
+"Our Choice": { title: "Our Choice", group: "dt", category: "boss", rank: 3, image: "ww_icons/res_mat/our_choice.webp"},
 
 /*Domain Drops*/
 "TBC_domain": { title: "TBC Domain", group: "e", category: "domain", rank: 0, image: "ww_icons/skill_mat/TBC_domain.webp"},
@@ -150,4 +152,6 @@ const itemMetadata = {
 "Summer Flower": { title: "Summer Flower", group: "fav", category: "flower", rank: 0, image: "ww_icons/asc_mat/summer_flower.webp"},
 "Rimewisp": { title: "Rimewisp", group: "faw", category: "flower", rank: 0, image: "ww_icons/asc_mat/rimewisp.webp"},
 "Gemini Spore": { title: "Gemini Spore", group: "fax", category: "flower", rank: 0, image: "ww_icons/asc_mat/gemini_spore.webp"},
+"Moss Amber": { title: "Moss Amber", group: "fay", category: "flower", rank: 0, image: "ww_icons/asc_mat/moss_amber.webp"},
+"Edelschnee": { title: "Edelschnee", group: "faz", category: "flower", rank: 0, image: "ww_icons/asc_mat/edelschnee.webp"},
 };
