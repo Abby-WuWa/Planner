@@ -20,6 +20,38 @@
     el.style.fontSize = `${size}px`;
   }
 }
+
+function attachSelectAllBehavior(input) {
+  if (!input) return;
+
+  // Works best when inputs are type="text"
+  input.addEventListener('focus', () => {
+    // A short delay helps on webkit/mobile to ensure selection
+    setTimeout(() => {
+      try {
+        input.select();
+      } catch (e) {
+        // Fallback for some number inputs
+        const val = String(input.value ?? '');
+        if (typeof input.setSelectionRange === 'function') {
+          try {
+            input.setSelectionRange(0, val.length);
+          } catch {}
+        }
+      }
+    }, 0);
+  });
+
+  // Prevent mouseup from clearing the selection the moment after focus
+  input.addEventListener('mouseup', (e) => {
+    e.preventDefault();
+  });
+
+  // (Optional) If a user re-clicks while focused, re-select the text
+  input.addEventListener('click', () => {
+    try { input.select(); } catch {}
+  });
+}
  
  characters.sort((a, b) => {
   // First, sort by rank (ascending)
@@ -1518,13 +1550,32 @@ container.innerHTML = `
         <div style="display: flex; flex-direction: column; align-items: center; width: 80px; ">    
           <img src="${meta.image}" alt="${item}" style="width: 60px; height: 60px;  ${bgStyle}">          
 		  
-          <input type="number" id="inv_${item}" value="${qty}" min="0" style="width: 60px; text-align: center; background-color: black; color: #d5bb88; border: solid black;">
-          <input type="number" id="add_${item}" value="0" min="0" style="width: 60px; background-color: black; color: #d5bb88; border: solid black; margin-top: 4px; text-align: center;" placeholder="+">
+          <input type="text" inputmode="numeric" pattern="[0-9]*" id="inv_${item}" value="${qty}" min="0" style="width: 60px; text-align: center; background-color: black; color: #d5bb88; border: solid black;">
+          <input type="text" inputmode="numeric" pattern="[0-9]*" id="add_${item}" value="0" min="0" style="width: 60px; background-color: black; color: #d5bb88; border: solid black; margin-top: 4px; text-align: center;" placeholder="+">
         </div>
       `;
     }).join('')}
   </div>
 `;
+
+// After you set container.innerHTML ...
+const allInputs = container.querySelectorAll("input[id^='inv_'], input[id^='add_']");
+
+allInputs.forEach(input => {
+  // Select all on focus
+  input.addEventListener('focus', (e) => {
+    // Small delay helps on some mobile/webkit browsers
+    setTimeout(() => {
+      input.select();
+    }, 0);
+  });
+
+  // Prevent mouseup from clearing the selection
+  input.addEventListener('mouseup', (e) => {
+    e.preventDefault();
+  });
+});
+
 // Attach blur event to each secondary input
 itemsInGroup.forEach(([item]) => {
   const addInput = document.getElementById(`add_${item}`);
@@ -3147,6 +3198,10 @@ if (activeCategoryFilters.size > 0 && !activeCategoryFilters.has(category)) retu
 });
 
   list.appendChild(itemsGrid);
+  
+  // 🔹 Safety net: ensure all inputs inside the list have select-all behavior
+  list.querySelectorAll('input').forEach(attachSelectAllBehavior);
+
   modal.style.display = 'block';
 }
 
@@ -3188,7 +3243,9 @@ function createItemElement(item, quantity) {
   imgWrapper.appendChild(img);
 
   const input = document.createElement('input');
-  input.type = 'number';
+  input.type = 'text';
+  input.inputMode = 'numeric';      // mobile numeric keypad
+  input.pattern = '[0-9]*';         // simple numeric hint
   input.min = 0;
   input.value = quantity;
   input.style.width = isShellCredit ? '200px' : '60px';
@@ -3199,6 +3256,14 @@ function createItemElement(item, quantity) {
   input.style.color = '#d5bb88';
   input.style.backgroundColor = 'black'; 
   input.style.border = 'solid black';
+
+    // (Optional) Hard-filter non-digits if you want to enforce numeric content
+  input.addEventListener('input', () => {
+    input.value = input.value.replace(/[^\d]/g, '');
+  });
+
+  // 🔹 Attach select-all behavior
+  attachSelectAllBehavior(input);
 
   if (isShellCredit) {
     const textAndInput = document.createElement('div');
