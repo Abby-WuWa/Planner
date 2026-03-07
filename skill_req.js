@@ -340,6 +340,17 @@ shorekeeper_req: [
 { from: 8, to: 9, items: { 'Shell Credits': 70000, 'Presto Helix': 3, 'FF Whisperin Core': 3, "Sentinel's Dagger": 1 } },
 { from: 9, to: 10,items: { 'Shell Credits': 100000, 'Presto Helix': 6, 'FF Whisperin Core': 4, "Sentinel's Dagger": 1 } },
 ],
+sigrika_req: [
+{ from: 1, to: 2, items: { 'Shell Credits': 1500, 'LF Waveworn Shard': 2, 'Fractured Exoswarm Pendant': 2 } },
+{ from: 2, to: 3, items: { 'Shell Credits': 2000, 'LF Waveworn Shard': 3, 'Fractured Exoswarm Pendant': 3 } },
+{ from: 3, to: 4, items: { 'Shell Credits': 4500, 'MF Waveworn Shard': 2, 'Worn Exoswarm Pendant': 2 } },
+{ from: 4, to: 5, items: { 'Shell Credits': 6000, 'MF Waveworn Shard': 3, 'Worn Exoswarm Pendant': 3 } },
+{ from: 5, to: 6, items: { 'Shell Credits': 16000, 'HF Waveworn Shard': 3, 'Chipped Exoswarm Pendant': 2 } },
+{ from: 6, to: 7, items: { 'Shell Credits': 30000, 'HF Waveworn Shard': 5, 'Chipped Exoswarm Pendant': 3, "Gold in Memory": 1 } },
+{ from: 7, to: 8, items: { 'Shell Credits': 50000, 'FF Waveworn Shard': 2, 'Intact Exoswarm Pendant': 2, "Gold in Memory": 1 } },
+{ from: 8, to: 9, items: { 'Shell Credits': 70000, 'FF Waveworn Shard': 3, 'Intact Exoswarm Pendant': 3, "Gold in Memory": 1 } },
+{ from: 9, to: 10, items: { 'Shell Credits': 100000, 'FF Waveworn Shard': 6, 'Intact Exoswarm Pendant': 4, "Gold in Memory": 1 } }
+],
 verina_req: [ 
 { from: 1, to: 2, items: { 'Shell Credits': 1500, 'Lento Helix': 2, 'LF Howler Core': 2 } },
 { from: 2, to: 3, items: { 'Shell Credits': 2000, 'Lento Helix': 3, 'LF Howler Core': 3 } },
