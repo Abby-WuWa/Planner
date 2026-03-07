@@ -319,6 +319,14 @@ const characters = [
     wpn: "sword",
     jsid: "sanhua_req"
   },
+    {
+    name: "Sigrika",
+    image: "ww_icons/char/sigrika_icon.webp",
+    rank: 1,
+    atrb: "aero",
+    wpn: "gauntlets",
+    jsid: "sigrika_req"
+  },
   {
     name: "Taoqi",
     image: "ww_icons/char/taoqi_icon.webp",
