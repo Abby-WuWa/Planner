@@ -123,6 +123,10 @@ shorekeeper_req: [
 { from: 0, to: 1, items: { 'Shell Credits': 50000, 'Andante Helix': 3, 'HF Whisperin Core': 3 } },
 { from: 1, to: 2, items: { 'Shell Credits': 100000, 'Presto Helix': 3, 'FF Whisperin Core': 3, "Sentinel's Dagger": 1 } }
 ],
+sigrika_req: [
+{ from: 0, to: 1, items: { 'Shell Credits': 50000, 'HF Waveworn Shard': 3, 'Chipped Exoswarm Pendant': 3 } },
+{ from: 1, to: 2, items: { 'Shell Credits': 100000, 'FF Waveworn Shard': 3, 'Intact Exoswarm Pendant': 3, "Gold in Memory": 1 } }
+],
 verina_req: [
 { from: 0, to: 1, items: { 'Shell Credits': 50000, 'Andante Helix': 3, 'HF Howler Core': 3 } },
 { from: 1, to: 2, items: { 'Shell Credits': 100000, 'Presto Helix': 3, 'FF Howler Core': 3, "Monument Bell": 1 } }
