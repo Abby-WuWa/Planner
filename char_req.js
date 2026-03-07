@@ -239,6 +239,14 @@ shorekeeper_req: [
 { min: '70*', max: '80', items: { 'Shell Credits' : 40000, 'Topological Confinement': 12, "Nova": 16, 'HF Whisperin Core': 8 } },
 { min: '80*', max: '90', items: { 'Shell Credits' : 80000, 'Topological Confinement': 16, "Nova": 20, 'FF Whisperin Core': 4 } }
 ],
+sigrika_req: [
+{ min: '20*', max: '40', items: { 'Shell Credits' : 5000, 'Fractured Exoswarm Pendant': 4 } },
+{ min: '40*', max: '50', items: { 'Shell Credits' : 10000, "Our Choice": 3, "Arithmetic Shell": 4, 'Worn Exoswarm Pendant': 4 } },
+{ min: '50*', max: '60', items: { 'Shell Credits' : 15000, "Our Choice": 6, "Arithmetic Shell": 8, 'Worn Exoswarm Pendant': 8 } },
+{ min: '60*', max: '70', items: { 'Shell Credits' : 20000, "Our Choice": 9, "Arithmetic Shell": 12, 'Chipped Exoswarm Pendant': 4 } },
+{ min: '70*', max: '80', items: { 'Shell Credits' : 40000, "Our Choice": 12, "Arithmetic Shell": 16, 'Chipped Exoswarm Pendant': 8 } },
+{ min: '80*', max: '90', items: { 'Shell Credits' : 80000, "Our Choice": 16, "Arithmetic Shell": 20, 'Intact Exoswarm Pendant': 4 } }
+],
 verina_req: [
 { min: '20*', max: '40', items: { 'Shell Credits' : 5000, 'LF Howler Core': 4 } },
 { min: '40*', max: '50', items: { 'Shell Credits' : 10000, 'Elegy Tacet Core': 3, "Belle Poppy": 4, 'MF Howler Core': 4 } },
