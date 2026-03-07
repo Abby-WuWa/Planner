@@ -154,4 +154,5 @@ const itemMetadata = {
 "Gemini Spore": { title: "Gemini Spore", group: "fax", category: "flower", rank: 0, image: "ww_icons/asc_mat/gemini_spore.webp"},
 "Moss Amber": { title: "Moss Amber", group: "fay", category: "flower", rank: 0, image: "ww_icons/asc_mat/moss_amber.webp"},
 "Edelschnee": { title: "Edelschnee", group: "faz", category: "flower", rank: 0, image: "ww_icons/asc_mat/edelschnee.webp"},
+"Arithmetic Shell": { title: "Arithmetic Shell", group: "fba", category: "flower", rank: 0, image: "ww_icons/asc_mat/arithmetic_shell.webp"},
 };
