@@ -47,6 +47,10 @@ ciaccona_req: [
 { from: 0, to: 1, items: { 'Shell Credits': 50000, 'Refined Phlogiston': 3, 'HF Tidal Residuum': 3 } },
 { from: 1, to: 2, items: { 'Shell Credits': 100000, 'Flawless Phlogiston': 3, 'FF Tidal Residuum': 3, "When Irises Bloom": 1 } }
 ],
+denia_req: [
+{ from: 0, to: 1, items: { 'Shell Credits': 50000, 'Solidified String': 3, 'HF Mech Core': 3 } },
+{ from: 1, to: 2, items: { 'Shell Credits': 100000, 'Melodic String': 3, 'FF Mech Core': 3, "TBC_weekly": 1 } }
+],
 encore_req: [
 { from: 0, to: 1, items: { 'Shell Credits': 50000, 'Andante Helix': 3, 'HF Whisperin Core': 3 } },
 { from: 1, to: 2, items: { 'Shell Credits': 100000, 'Presto Helix': 3, 'FF Whisperin Core': 3, "Unending Destruction": 1 } }
@@ -54,6 +58,10 @@ encore_req: [
 galbrena_req: [
 { from: 0, to: 1, items: { 'Shell Credits': 50000, 'Refined Phlogiston': 3, 'HF Tidal Residuum': 3 } },
 { from: 1, to: 2, items: { 'Shell Credits': 100000, 'Flawless Phlogiston': 3, 'FF Tidal Residuum': 3, "Curse of the Abyss": 1 } }
+],
+hiyuki_req: [
+{ from: 0, to: 1, items: { 'Shell Credits': 50000, 'Polywing Polarizer': 3, 'HF Exoswarm Core': 3 } },
+{ from: 1, to: 2, items: { 'Shell Credits': 100000, 'Layered Wing Polarizer': 3, 'FF Exoswarm Core': 3, "TBC_weekly": 1 } }
 ],
 iuno_req: [
 { from: 0, to: 1, items: { 'Shell Credits': 50000, 'Cadence Leaf': 3, 'HF Polygon Core': 3 } },
