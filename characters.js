@@ -159,6 +159,14 @@ const characters = [
     wpn: "sword",
     jsid: "danjin_req"
   },
+    {
+    name: "Denia",
+    image: "ww_icons/char/denia_icon.webp",
+    rank: 1,
+    atrb: "fusion",
+    wpn: "rectifier",
+    jsid: "denia_req"
+  },
   {
     name: "Galbrena",
     image: "ww_icons/char/galbrena_icon.webp",
@@ -166,6 +174,14 @@ const characters = [
     atrb: "pistols",
     wpn: "fusion",
     jsid: "galbrena_req"
+  },
+     {
+    name: "Hiyuki",
+    image: "ww_icons/char/hiyuki_icon.webp",
+    rank: 1,
+    atrb: "glacio",
+    wpn: "sword",
+    jsid: "hiyuki_req"
   },
   {
     name: "Iuno",
