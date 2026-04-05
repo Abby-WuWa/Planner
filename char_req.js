@@ -87,6 +87,14 @@ ciaccona_req: [
 { min: '70*', max: '80', items: { 'Shell Credits' : 40000, 'Blazing Bone': 12, 'Golden Fleece': 16, 'HF Tidal Residuum': 8 } },
 { min: '80*', max: '90', items: { 'Shell Credits' : 80000, 'Blazing Bone': 16, 'Golden Fleece': 20, 'FF Tidal Residuum': 4 } }
 ],
+denia_req: [
+{ min: '20*', max: '40', items: { 'Shell Credits' : 5000, 'LF Mech Core': 4 } },
+{ min: '40*', max: '50', items: { 'Shell Credits' : 10000, "Burning Judgment": 3, "Stargrail": 4, 'MF Mech Core': 4 } },
+{ min: '50*', max: '60', items: { 'Shell Credits' : 15000, "Burning Judgment": 6, "Stargrail": 8, 'MF Mech Core': 8 } },
+{ min: '60*', max: '70', items: { 'Shell Credits' : 20000, "Burning Judgment": 9, "Stargrail": 12, 'HF Mech Core': 4 } },
+{ min: '70*', max: '80', items: { 'Shell Credits' : 40000, "Burning Judgment": 12, "Stargrail": 16, 'HF Mech Core': 8 } },
+{ min: '80*', max: '90', items: { 'Shell Credits' : 80000, "Burning Judgment": 16, "Stargrail": 20, 'FF Mech Core': 4 } }
+],
 encore_req: [
 { min: '20*', max: '40', items: { 'Shell Credits' : 5000, 'LF Whisperin Core': 4 } },
 { min: '40*', max: '50', items: { 'Shell Credits' : 10000, 'Rage Tacet Core': 3, 'Pecok Flower': 4, 'MF Whisperin Core': 4 } },
@@ -102,6 +110,14 @@ galbrena_req: [
 { min: '60*', max: '70', items: { 'Shell Credits' : 20000, 'Blighted Crown of Puppet King': 9, 'Stone Rose': 12, 'HF Tidal Residuum': 4 } },
 { min: '70*', max: '80', items: { 'Shell Credits' : 40000, 'Blighted Crown of Puppet King': 12, 'Stone Rose': 16, 'HF Tidal Residuum': 8 } },
 { min: '80*', max: '90', items: { 'Shell Credits' : 80000, 'Blighted Crown of Puppet King': 16, 'Stone Rose': 20, 'FF Tidal Residuum': 4 } }
+],
+hiyuki_req: [
+{ min: '20*', max: '40', items: { 'Shell Credits' : 5000, 'LF Exoswarm Core': 4 } },
+{ min: '40*', max: '50', items: { 'Shell Credits' : 10000, "Our Choice": 3, "Redbell": 4, 'MF Exoswarm Core': 4 } },
+{ min: '50*', max: '60', items: { 'Shell Credits' : 15000, "Our Choice": 6, "Redbell": 8, 'MF Exoswarm Core': 8 } },
+{ min: '60*', max: '70', items: { 'Shell Credits' : 20000, "Our Choice": 9, "Redbell": 12, 'HF Exoswarm Core': 4 } },
+{ min: '70*', max: '80', items: { 'Shell Credits' : 40000, "Our Choice": 12, "Redbell": 16, 'HF Exoswarm Core': 8 } },
+{ min: '80*', max: '90', items: { 'Shell Credits' : 80000, "Our Choice": 16, "Redbell": 20, 'FF Exoswarm Core': 4 } }
 ],
 iuno_req: [
 { min: '20*', max: '40', items: { 'Shell Credits' : 5000, 'LF Polygon Core': 4 } },
