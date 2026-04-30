@@ -59,6 +59,7 @@ const itemMetadata = {
 "When Irises Bloom": { title: "When Irises Bloom", group: "cf", category: "weekly", rank: 3, image: "ww_icons/skill_mat/when_irises_bloom.webp"},
 "Curse of the Abyss": { title: "Curse of the Abyss", group: "cg", category: "weekly", rank: 3, image: "ww_icons/skill_mat/curse_of_the_abyss.webp"},
 "Gold in Memory": { title: "Gold in Memory", group: "ch", category: "weekly", rank: 3, image: "ww_icons/skill_mat/gold_in_memory.webp"},
+"We Who Question": { title: "We Who Question", group: "ci", category: "weekly", rank: 3, image: "ww_icons/skill_mat/we_who_question.webp"},
 
 /*Boss Material*/
 "TBC_boss": { title: "TBC Boss", group: "d", category: "boss", rank: 3, image: "ww_icons/res_mat/TBC_boss.webp"},
@@ -155,6 +156,6 @@ const itemMetadata = {
 "Moss Amber": { title: "Moss Amber", group: "fay", category: "flower", rank: 0, image: "ww_icons/asc_mat/moss_amber.webp"},
 "Edelschnee": { title: "Edelschnee", group: "faz", category: "flower", rank: 0, image: "ww_icons/asc_mat/edelschnee.webp"},
 "Arithmetic Shell": { title: "Arithmetic Shell", group: "fba", category: "flower", rank: 0, image: "ww_icons/asc_mat/arithmetic_shell.webp"},
-"Stargrail": { title: "TBC Flower", group: "fbb", category: "flower", rank: 0, image: "ww_icons/asc_mat/TBC_flower.webp"},
-"Redbell": { title: "TBC Flower", group: "fbc", category: "flower", rank: 0, image: "ww_icons/asc_mat/TBC_flower.webp"},
+"Dream of Stars": { title: "Dream of Stars", group: "fbb", category: "flower", rank: 0, image: "ww_icons/asc_mat/dream_of_stars.webp"},
+"Redbell": { title: "TBC Flower", group: "fbc", category: "flower", rank: 0, image: "ww_icons/asc_mat/redbell.webp"},
 };
