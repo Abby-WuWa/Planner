@@ -137,10 +137,10 @@ denia_req: [
 { from: 3, to: 4, items: { 'Shell Credits': 4500, 'Broken String': 2, 'MF Mech Core': 2 } },
 { from: 4, to: 5, items: { 'Shell Credits': 6000, 'Broken String': 3, 'MF Mech Core': 3 } },
 { from: 5, to: 6, items: { 'Shell Credits': 16000, 'Solidified String': 3, 'HF Mech Core': 2 } },
-{ from: 6, to: 7, items: { 'Shell Credits': 30000, 'Solidified String': 5, 'HF Mech Core': 3, "TBC_weekly": 1 } },
-{ from: 7, to: 8, items: { 'Shell Credits': 50000, 'Melodic String': 2, 'FF Mech Core': 2, "TBC_weekly": 1 } },
-{ from: 8, to: 9, items: { 'Shell Credits': 70000, 'Melodic String': 3, 'FF Mech Core': 3, "TBC_weekly": 1 } },
-{ from: 9, to: 10, items: { 'Shell Credits': 100000, 'Melodic String': 6, 'FF Mech Core': 4, "TBC_weekly": 1 } }
+{ from: 6, to: 7, items: { 'Shell Credits': 30000, 'Solidified String': 5, 'HF Mech Core': 3, "We Who Question": 1 } },
+{ from: 7, to: 8, items: { 'Shell Credits': 50000, 'Melodic String': 2, 'FF Mech Core': 2, "We Who Question": 1 } },
+{ from: 8, to: 9, items: { 'Shell Credits': 70000, 'Melodic String': 3, 'FF Mech Core': 3, "We Who Question": 1 } },
+{ from: 9, to: 10, items: { 'Shell Credits': 100000, 'Melodic String': 6, 'FF Mech Core': 4, "We Who Question": 1 } }
 ],
 encore_req: [ 
 { from: 1, to: 2, items: { 'Shell Credits': 1500, 'Lento Helix': 2, 'LF Whisperin Core': 2 } },
@@ -170,10 +170,10 @@ hiyuki_req: [
 { from: 3, to: 4, items: { 'Shell Credits': 4500, 'Monowing Polarizer': 2, 'MF Exoswarm Core': 2 } },
 { from: 4, to: 5, items: { 'Shell Credits': 6000, 'Monowing Polarizer': 3, 'MF Exoswarm Core': 3 } },
 { from: 5, to: 6, items: { 'Shell Credits': 16000, 'Polywing Polarizer': 3, 'HF Exoswarm Core': 2 } },
-{ from: 6, to: 7, items: { 'Shell Credits': 30000, 'Polywing Polarizer': 5, 'HF Exoswarm Core': 3, "TBC_weekly": 1 } },
-{ from: 7, to: 8, items: { 'Shell Credits': 50000, 'Layered Wing Polarizer': 2, 'FF Exoswarm Core': 2, "TBC_weekly": 1 } },
-{ from: 8, to: 9, items: { 'Shell Credits': 70000, 'Layered Wing Polarizer': 3, 'FF Exoswarm Core': 3, "TBC_weekly": 1 } },
-{ from: 9, to: 10, items: { 'Shell Credits': 100000, 'Layered Wing Polarizer': 6, 'FF Exoswarm Core': 4, "TBC_weekly": 1 } }
+{ from: 6, to: 7, items: { 'Shell Credits': 30000, 'Polywing Polarizer': 5, 'HF Exoswarm Core': 3, "We Who Question": 1 } },
+{ from: 7, to: 8, items: { 'Shell Credits': 50000, 'Layered Wing Polarizer': 2, 'FF Exoswarm Core': 2, "We Who Question": 1 } },
+{ from: 8, to: 9, items: { 'Shell Credits': 70000, 'Layered Wing Polarizer': 3, 'FF Exoswarm Core': 3, "We Who Question": 1 } },
+{ from: 9, to: 10, items: { 'Shell Credits': 100000, 'Layered Wing Polarizer': 6, 'FF Exoswarm Core': 4, "We Who Question": 1 } }
 ],
 iuno_req: [
 { from: 1, to: 2, items: { 'Shell Credits': 1500, 'Cadence Seed': 2, 'LF Polygon Core': 2 } },
