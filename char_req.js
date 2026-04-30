@@ -89,11 +89,11 @@ ciaccona_req: [
 ],
 denia_req: [
 { min: '20*', max: '40', items: { 'Shell Credits' : 5000, 'LF Mech Core': 4 } },
-{ min: '40*', max: '50', items: { 'Shell Credits' : 10000, "Burning Judgment": 3, "Stargrail": 4, 'MF Mech Core': 4 } },
-{ min: '50*', max: '60', items: { 'Shell Credits' : 15000, "Burning Judgment": 6, "Stargrail": 8, 'MF Mech Core': 8 } },
-{ min: '60*', max: '70', items: { 'Shell Credits' : 20000, "Burning Judgment": 9, "Stargrail": 12, 'HF Mech Core': 4 } },
-{ min: '70*', max: '80', items: { 'Shell Credits' : 40000, "Burning Judgment": 12, "Stargrail": 16, 'HF Mech Core': 8 } },
-{ min: '80*', max: '90', items: { 'Shell Credits' : 80000, "Burning Judgment": 16, "Stargrail": 20, 'FF Mech Core': 4 } }
+{ min: '40*', max: '50', items: { 'Shell Credits' : 10000, "Burning Judgment": 3, "Dream of Stars": 4, 'MF Mech Core': 4 } },
+{ min: '50*', max: '60', items: { 'Shell Credits' : 15000, "Burning Judgment": 6, "Dream of Stars": 8, 'MF Mech Core': 8 } },
+{ min: '60*', max: '70', items: { 'Shell Credits' : 20000, "Burning Judgment": 9, "Dream of Stars": 12, 'HF Mech Core': 4 } },
+{ min: '70*', max: '80', items: { 'Shell Credits' : 40000, "Burning Judgment": 12, "Dream of Stars": 16, 'HF Mech Core': 8 } },
+{ min: '80*', max: '90', items: { 'Shell Credits' : 80000, "Burning Judgment": 16, "Dream of Stars": 20, 'FF Mech Core': 4 } }
 ],
 encore_req: [
 { min: '20*', max: '40', items: { 'Shell Credits' : 5000, 'LF Whisperin Core': 4 } },
