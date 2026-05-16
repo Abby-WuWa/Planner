@@ -224,6 +224,22 @@ const characters = [
     jsid: "lingyang_req"
   },
   {
+    name: "Lucilla",
+    image: "ww_icons/char/lucilla_icon.webp",
+    rank: 1,
+    atrb: "glacio",
+    wpn: "rectifier",
+    jsid: "lucilla_req"
+  },
+  {
+    name: "Lucy",
+    image: "ww_icons/char/lucy_icon.webp",
+    rank: 1,
+    atrb: "spectro",
+    wpn: "pistols",
+    jsid: "lucy_req"
+  },
+  {
     name: "Lumi",
     image: "ww_icons/char/lumi_icon.webp",
     rank: 2,
@@ -294,6 +310,14 @@ const characters = [
     atrb: "aero",
     wpn: "sword",
     jsid: "qiuyuan_req"
+  },
+   {
+    name: "Rebecca",
+    image: "ww_icons/char/rebecca_icon.webp",
+    rank: 1,
+    atrb: "havoc",
+    wpn: "pistols",
+    jsid: "rebecca_req"
   },
   {
     name: "Roccia",
