@@ -157,5 +157,6 @@ const itemMetadata = {
 "Edelschnee": { title: "Edelschnee", group: "faz", category: "flower", rank: 0, image: "ww_icons/asc_mat/edelschnee.webp"},
 "Arithmetic Shell": { title: "Arithmetic Shell", group: "fba", category: "flower", rank: 0, image: "ww_icons/asc_mat/arithmetic_shell.webp"},
 "Dream of Stars": { title: "Dream of Stars", group: "fbb", category: "flower", rank: 0, image: "ww_icons/asc_mat/dream_of_stars.webp"},
-"Redbell": { title: "TBC Flower", group: "fbc", category: "flower", rank: 0, image: "ww_icons/asc_mat/redbell.webp"},
+"Redbell": { title: "Redbell", group: "fbc", category: "flower", rank: 0, image: "ww_icons/asc_mat/redbell.webp"},
+"Forget-Me-Not": { title: "Forget-Me-Not", group: "fbd", category: "flower", rank: 0, image: "ww_icons/asc_mat/forget_me_not.webp"},
 };
