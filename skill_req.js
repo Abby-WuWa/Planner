@@ -230,6 +230,28 @@ lingyang_req: [
 { from: 8, to: 9, items: { 'Shell Credits': 70000, 'Cadence Blossom': 3, 'FF Whisperin Core': 3, "Unending Destruction": 1 } },
 { from: 9, to: 10,items: { 'Shell Credits': 100000, 'Cadence Blossom': 6, 'FF Whisperin Core': 4, "Unending Destruction": 1 } },
 ],
+lucilla_req: [
+{ from: 1, to: 2, items: { 'Shell Credits': 1500, 'Spliced String': 2, 'LF Mech Core': 2 } },
+{ from: 2, to: 3, items: { 'Shell Credits': 2000, 'Spliced String': 3, 'LF Mech Core': 3 } },
+{ from: 3, to: 4, items: { 'Shell Credits': 4500, 'Broken String': 2, 'MF Mech Core': 2 } },
+{ from: 4, to: 5, items: { 'Shell Credits': 6000, 'Broken String': 3, 'MF Mech Core': 3 } },
+{ from: 5, to: 6, items: { 'Shell Credits': 16000, 'Solidified String': 3, 'HF Mech Core': 2 } },
+{ from: 6, to: 7, items: { 'Shell Credits': 30000, 'Solidified String': 5, 'HF Mech Core': 3, "We Who Question": 1 } },
+{ from: 7, to: 8, items: { 'Shell Credits': 50000, 'Melodic String': 2, 'FF Mech Core': 2, "We Who Question": 1 } },
+{ from: 8, to: 9, items: { 'Shell Credits': 70000, 'Melodic String': 3, 'FF Mech Core': 3, "We Who Question": 1 } },
+{ from: 9, to: 10, items: { 'Shell Credits': 100000, 'Melodic String': 6, 'FF Mech Core': 4, "We Who Question": 1 } }
+],
+lucy_req: [
+{ from: 1, to: 2, items: { 'Shell Credits': 1500, 'Incomplete Combustor': 2, 'LF Exoswarm Core': 2 } },
+{ from: 2, to: 3, items: { 'Shell Credits': 2000, 'Incomplete Combustor': 3, 'LF Exoswarm Core': 3 } },
+{ from: 3, to: 4, items: { 'Shell Credits': 4500, 'Aftertune Combustor': 2, 'MF Exoswarm Core': 2 } },
+{ from: 4, to: 5, items: { 'Shell Credits': 6000, 'Aftertune Combustor': 3, 'MF Exoswarm Core': 3 } },
+{ from: 5, to: 6, items: { 'Shell Credits': 16000, 'Remnant Combustor': 3, 'HF Exoswarm Core': 2 } },
+{ from: 6, to: 7, items: { 'Shell Credits': 30000, 'Remnant Combustor': 5, 'HF Exoswarm Core': 3, "Gold in Memory": 1 } },
+{ from: 7, to: 8, items: { 'Shell Credits': 50000, 'Reverb Combustor': 2, 'FF Exoswarm Core': 2, "Gold in Memory": 1 } },
+{ from: 8, to: 9, items: { 'Shell Credits': 70000, 'Reverb Combustor': 3, 'FF Exoswarm Core': 3, "Gold in Memory": 1 } },
+{ from: 9, to: 10, items: { 'Shell Credits': 100000, 'Reverb Combustor': 6, 'FF Exoswarm Core': 4, "Gold in Memory": 1 } }
+],
 lupa_req: [ 
 { from: 1, to: 2, items: { 'Shell Credits': 1500, 'Waveworn Residue 210': 2, 'LF Howler Core': 2 } },
 { from: 2, to: 3, items: { 'Shell Credits': 2000, 'Waveworn Residue 210': 3, 'LF Howler Core': 3 } },
@@ -306,6 +328,17 @@ qiuyuan_req: [
 { from: 7, to: 8, items: { 'Shell Credits': 50000, 'Heterized Metallic Drip': 2, 'FF Whisperin Core': 2, "Curse of the Abyss": 1 } },
 { from: 8, to: 9, items: { 'Shell Credits': 70000, 'Heterized Metallic Drip': 3, 'FF Whisperin Core': 3, "Curse of the Abyss": 1 } },
 { from: 9, to: 10, items: { 'Shell Credits': 100000, 'Heterized Metallic Drip': 6, 'FF Whisperin Core': 4, "Curse of the Abyss": 1 } }
+],
+rebecca_req: [
+{ from: 1, to: 2, items: { 'Shell Credits': 1500, 'Incomplete Combustor': 2, 'LF Mech Core': 2 } },
+{ from: 2, to: 3, items: { 'Shell Credits': 2000, 'Incomplete Combustor': 3, 'LF Mech Core': 3 } },
+{ from: 3, to: 4, items: { 'Shell Credits': 4500, 'Aftertune Combustor': 2, 'MF Mech Core': 2 } },
+{ from: 4, to: 5, items: { 'Shell Credits': 6000, 'Aftertune Combustor': 3, 'MF Mech Core': 3 } },
+{ from: 5, to: 6, items: { 'Shell Credits': 16000, 'Remnant Combustor': 3, 'HF Mech Core': 2 } },
+{ from: 6, to: 7, items: { 'Shell Credits': 30000, 'Remnant Combustor': 5, 'HF Mech Core': 3, "We Who Question": 1 } },
+{ from: 7, to: 8, items: { 'Shell Credits': 50000, 'Reverb Combustor': 2, 'FF Mech Core': 2, "We Who Question": 1 } },
+{ from: 8, to: 9, items: { 'Shell Credits': 70000, 'Reverb Combustor': 3, 'FF Mech Core': 3, "We Who Question": 1 } },
+{ from: 9, to: 10, items: { 'Shell Credits': 100000, 'Reverb Combustor': 6, 'FF Mech Core': 4, "We Who Question": 1 } }
 ],
 roccia_req: [ 
 { from: 1, to: 2, items: { 'Shell Credits': 1500, 'Cadence Seed': 2, 'LF Tidal Residuum': 2 } },
