@@ -83,6 +83,14 @@ lingyang_req: [
 { from: 0, to: 1, items: { 'Shell Credits': 50000, 'Cadence Leaf': 3, 'HF Whisperin Core': 3 } },
 { from: 1, to: 2, items: { 'Shell Credits': 100000, 'Cadence Blossom': 3, 'FF Whisperin Core': 3, "Unending Destruction": 1 } }
 ],
+lucilla_req: [
+{ from: 0, to: 1, items: { 'Shell Credits': 50000, 'Solidified String': 3, 'HF Mech Core': 3 } },
+{ from: 1, to: 2, items: { 'Shell Credits': 100000, 'Melodic String': 3, 'FF Mech Core': 3, "We Who Question": 1 } }
+],
+lucy_req: [
+{ from: 0, to: 1, items: { 'Shell Credits': 50000, 'Remnant Combustor': 3, 'HF Exoswarm Core': 3 } },
+{ from: 1, to: 2, items: { 'Shell Credits': 100000, 'Reverb Combustor': 3, 'FF Exoswarm Core': 3, "Gold in Memory": 1 } }
+],
 lupa_req: [
 { from: 0, to: 1, items: { 'Shell Credits': 50000, 'Waveworn Residue 235': 3, 'HF Howler Core': 3 } },
 { from: 1, to: 2, items: { 'Shell Credits': 100000, 'Waveworn Residue 239': 3, 'FF Howler Core': 3, "The Netherworld's Stare": 1 } }
@@ -110,6 +118,10 @@ phrolova_req: [
 qiuyuan_req: [
 { from: 0, to: 1, items: { 'Shell Credits': 50000, 'Polarized Metallic Drip': 3, 'HF Whisperin Core': 3 } },
 { from: 1, to: 2, items: { 'Shell Credits': 100000, 'Heterized Metallic Drip': 3, 'FF Whisperin Core': 3, "Curse of the Abyss": 1 } }
+],
+rebecca_req: [
+{ from: 0, to: 1, items: { 'Shell Credits': 50000, 'Remnant Combustor': 3, 'HF Mech Core': 3 } },
+{ from: 1, to: 2, items: { 'Shell Credits': 100000, 'Reverb Combustor': 3, 'FF Mech Core': 3, "We Who Question": 1 } }
 ],
 roccia_req: [
 { from: 0, to: 1, items: { 'Shell Credits': 50000, 'Cadence Leaf': 3, 'HF Tidal Residuum': 3 } },
