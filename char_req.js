@@ -159,6 +159,22 @@ lingyang_req: [
 { min: '70*', max: '80', items: { 'Shell Credits' : 40000, 'Sound-Keeping Tacet Core': 12, "Coriolus": 16, 'HF Whisperin Core': 8 } },
 { min: '80*', max: '90', items: { 'Shell Credits' : 80000, 'Sound-Keeping Tacet Core': 16, "Coriolus": 20, 'FF Whisperin Core': 4 } }
 ],
+lucilla_req: [
+{ min: '20*', max: '40', items: { 'Shell Credits' : 5000, 'LF Mech Core': 4 } },
+{ min: '40*', max: '50', items: { 'Shell Credits' : 10000, "Suncoveter's Reach": 3, "Forget-Me-Not": 4, 'MF Mech Core': 4 } },
+{ min: '50*', max: '60', items: { 'Shell Credits' : 15000, "Suncoveter's Reach": 6, "Forget-Me-Not": 8, 'MF Mech Core': 8 } },
+{ min: '60*', max: '70', items: { 'Shell Credits' : 20000, "Suncoveter's Reach": 9, "Forget-Me-Not": 12, 'HF Mech Core': 4 } },
+{ min: '70*', max: '80', items: { 'Shell Credits' : 40000, "Suncoveter's Reach": 12, "Forget-Me-Not": 16, 'HF Mech Core': 8 } },
+{ min: '80*', max: '90', items: { 'Shell Credits' : 80000, "Suncoveter's Reach": 16, "Forget-Me-Not": 20, 'FF Mech Core': 4 } }
+],
+lucy_req: [
+{ min: '20*', max: '40', items: { 'Shell Credits' : 5000, 'LF Exoswarm Core': 4 } },
+{ min: '40*', max: '50', items: { 'Shell Credits' : 10000, "TBC_boss": 3, "TBC_flower": 4, 'MF Exoswarm Core': 4 } },
+{ min: '50*', max: '60', items: { 'Shell Credits' : 15000, "TBC_boss": 6, "TBC_flower": 8, 'MF Exoswarm Core': 8 } },
+{ min: '60*', max: '70', items: { 'Shell Credits' : 20000, "TBC_boss": 9, "TBC_flower": 12, 'HF Exoswarm Core': 4 } },
+{ min: '70*', max: '80', items: { 'Shell Credits' : 40000, "TBC_boss": 12, "TBC_flower": 16, 'HF Exoswarm Core': 8 } },
+{ min: '80*', max: '90', items: { 'Shell Credits' : 80000, "TBC_boss": 16, "TBC_flower": 20, 'FF Exoswarm Core': 4 } }
+],
 lupa_req: [
 { min: '20*', max: '40', items: { 'Shell Credits' : 5000, 'LF Howler Core': 4 } },
 { min: '40*', max: '50', items: { 'Shell Credits' : 10000, 'Unfading Glory': 3, "Bloodleaf Viburnum": 4, 'MF Howler Core': 4 } },
@@ -214,6 +230,14 @@ qiuyuan_req: [
 { min: '60*', max: '70', items: { 'Shell Credits' : 20000, "Truth in Lies": 9, "Wintry Bell": 12, 'HF Whisperin Core': 4 } },
 { min: '70*', max: '80', items: { 'Shell Credits' : 40000, "Truth in Lies": 12, "Wintry Bell": 16, 'HF Whisperin Core': 8 } },
 { min: '80*', max: '90', items: { 'Shell Credits' : 80000, "Truth in Lies": 16, "Wintry Bell": 20, 'FF Whisperin Core': 4 } }
+],
+rebecca_req: [
+{ min: '20*', max: '40', items: { 'Shell Credits' : 5000, 'LF Mech Core': 4 } },
+{ min: '40*', max: '50', items: { 'Shell Credits' : 10000, "TBC_boss": 3, "TBC_flower": 4, 'MF Mech Core': 4 } },
+{ min: '50*', max: '60', items: { 'Shell Credits' : 15000, "TBC_boss": 6, "TBC_flower": 8, 'MF Mech Core': 8 } },
+{ min: '60*', max: '70', items: { 'Shell Credits' : 20000, "TBC_boss": 9, "TBC_flower": 12, 'HF Mech Core': 4 } },
+{ min: '70*', max: '80', items: { 'Shell Credits' : 40000, "TBC_boss": 12, "TBC_flower": 16, 'HF Mech Core': 8 } },
+{ min: '80*', max: '90', items: { 'Shell Credits' : 80000, "TBC_boss": 16, "TBC_flower": 20, 'FF Mech Core': 4 } }
 ],
 roccia_req: [
 { min: '20*', max: '40', items: { 'Shell Credits' : 5000, 'LF Tidal Residuum': 4 } },
