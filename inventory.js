@@ -83,6 +83,8 @@ const itemMetadata = {
 "Suncoveter's Reach": { title: "Suncoveter's Reach", group: "dr", category: "boss", rank: 3, image: "ww_icons/res_mat/suncoveters_reach.webp"},
 "Burning Judgment": { title: "Burning Judgment", group: "ds", category: "boss", rank: 3, image: "ww_icons/res_mat/burning_judgment.webp"},
 "Our Choice": { title: "Our Choice", group: "dt", category: "boss", rank: 3, image: "ww_icons/res_mat/our_choice.webp"},
+"Nightmare Flashdrive": { title: "Nightmare Flashdrive", group: "du", category: "boss", rank: 3, image: "ww_icons/res_mat/nightmare_flashdrive.webp"},
+
 
 /*Domain Drops*/
 "TBC_domain": { title: "TBC Domain", group: "e", category: "domain", rank: 0, image: "ww_icons/skill_mat/TBC_domain.webp"},
@@ -159,4 +161,5 @@ const itemMetadata = {
 "Dream of Stars": { title: "Dream of Stars", group: "fbb", category: "flower", rank: 0, image: "ww_icons/asc_mat/dream_of_stars.webp"},
 "Redbell": { title: "Redbell", group: "fbc", category: "flower", rank: 0, image: "ww_icons/asc_mat/redbell.webp"},
 "Forget-Me-Not": { title: "Forget-Me-Not", group: "fbd", category: "flower", rank: 0, image: "ww_icons/asc_mat/forget_me_not.webp"},
+"Past Reveries": { title: "Past Reveries", group: "fbe", category: "flower", rank: 0, image: "ww_icons/asc_mat/past_reveries.webp"},
 };
