@@ -169,11 +169,11 @@ lucilla_req: [
 ],
 lucy_req: [
 { min: '20*', max: '40', items: { 'Shell Credits' : 5000, 'LF Exoswarm Core': 4 } },
-{ min: '40*', max: '50', items: { 'Shell Credits' : 10000, "TBC_boss": 3, "TBC_flower": 4, 'MF Exoswarm Core': 4 } },
-{ min: '50*', max: '60', items: { 'Shell Credits' : 15000, "TBC_boss": 6, "TBC_flower": 8, 'MF Exoswarm Core': 8 } },
-{ min: '60*', max: '70', items: { 'Shell Credits' : 20000, "TBC_boss": 9, "TBC_flower": 12, 'HF Exoswarm Core': 4 } },
-{ min: '70*', max: '80', items: { 'Shell Credits' : 40000, "TBC_boss": 12, "TBC_flower": 16, 'HF Exoswarm Core': 8 } },
-{ min: '80*', max: '90', items: { 'Shell Credits' : 80000, "TBC_boss": 16, "TBC_flower": 20, 'FF Exoswarm Core': 4 } }
+{ min: '40*', max: '50', items: { 'Shell Credits' : 10000, "Nightmare Flashdrive": 3, "Past Reveries": 4, 'MF Exoswarm Core': 4 } },
+{ min: '50*', max: '60', items: { 'Shell Credits' : 15000, "Nightmare Flashdrive": 6, "Past Reveries": 8, 'MF Exoswarm Core': 8 } },
+{ min: '60*', max: '70', items: { 'Shell Credits' : 20000, "Nightmare Flashdrive": 9, "Past Reveries": 12, 'HF Exoswarm Core': 4 } },
+{ min: '70*', max: '80', items: { 'Shell Credits' : 40000, "Nightmare Flashdrive": 12, "Past Reveries": 16, 'HF Exoswarm Core': 8 } },
+{ min: '80*', max: '90', items: { 'Shell Credits' : 80000, "Nightmare Flashdrive": 16, "Past Reveries": 20, 'FF Exoswarm Core': 4 } }
 ],
 lupa_req: [
 { min: '20*', max: '40', items: { 'Shell Credits' : 5000, 'LF Howler Core': 4 } },
@@ -233,11 +233,11 @@ qiuyuan_req: [
 ],
 rebecca_req: [
 { min: '20*', max: '40', items: { 'Shell Credits' : 5000, 'LF Mech Core': 4 } },
-{ min: '40*', max: '50', items: { 'Shell Credits' : 10000, "TBC_boss": 3, "TBC_flower": 4, 'MF Mech Core': 4 } },
-{ min: '50*', max: '60', items: { 'Shell Credits' : 15000, "TBC_boss": 6, "TBC_flower": 8, 'MF Mech Core': 8 } },
-{ min: '60*', max: '70', items: { 'Shell Credits' : 20000, "TBC_boss": 9, "TBC_flower": 12, 'HF Mech Core': 4 } },
-{ min: '70*', max: '80', items: { 'Shell Credits' : 40000, "TBC_boss": 12, "TBC_flower": 16, 'HF Mech Core': 8 } },
-{ min: '80*', max: '90', items: { 'Shell Credits' : 80000, "TBC_boss": 16, "TBC_flower": 20, 'FF Mech Core': 4 } }
+{ min: '40*', max: '50', items: { 'Shell Credits' : 10000, "Nightmare Flashdrive": 3, "Past Reveries": 4, 'MF Mech Core': 4 } },
+{ min: '50*', max: '60', items: { 'Shell Credits' : 15000, "Nightmare Flashdrive": 6, "Past Reveries": 8, 'MF Mech Core': 8 } },
+{ min: '60*', max: '70', items: { 'Shell Credits' : 20000, "Nightmare Flashdrive": 9, "Past Reveries": 12, 'HF Mech Core': 4 } },
+{ min: '70*', max: '80', items: { 'Shell Credits' : 40000, "Nightmare Flashdrive": 12, "Past Reveries": 16, 'HF Mech Core': 8 } },
+{ min: '80*', max: '90', items: { 'Shell Credits' : 80000, "Nightmare Flashdrive": 16, "Past Reveries": 20, 'FF Mech Core': 4 } }
 ],
 roccia_req: [
 { min: '20*', max: '40', items: { 'Shell Credits' : 5000, 'LF Tidal Residuum': 4 } },
