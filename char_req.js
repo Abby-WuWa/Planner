@@ -271,6 +271,14 @@ rover_spectro_req: [
 { min: '70*', max: '80', items: { 'Shell Credits' : 40000, 'Mysterious Code': 12, "Pecok Flower": 16, 'HF Whisperin Core': 8 } },
 { min: '80*', max: '90', items: { 'Shell Credits' : 80000, 'Mysterious Code': 16, "Pecok Flower": 20, 'FF Whisperin Core': 4 } }
 ],
+rover_electro_req: [
+{ min: '20*', max: '40', items: { 'Shell Credits' : 5000, 'LF Whisperin Core': 4 } },
+{ min: '40*', max: '50', items: { 'Shell Credits' : 10000, 'Mysterious Code': 3, "Pecok Flower": 4, 'MF Whisperin Core': 4 } },
+{ min: '50*', max: '60', items: { 'Shell Credits' : 15000, 'Mysterious Code': 6, "Pecok Flower": 8, 'MF Whisperin Core': 8 } },
+{ min: '60*', max: '70', items: { 'Shell Credits' : 20000, 'Mysterious Code': 9, "Pecok Flower": 12, 'HF Whisperin Core': 4 } },
+{ min: '70*', max: '80', items: { 'Shell Credits' : 40000, 'Mysterious Code': 12, "Pecok Flower": 16, 'HF Whisperin Core': 8 } },
+{ min: '80*', max: '90', items: { 'Shell Credits' : 80000, 'Mysterious Code': 16, "Pecok Flower": 20, 'FF Whisperin Core': 4 } }
+],
 shorekeeper_req: [
 { min: '20*', max: '40', items: { 'Shell Credits' : 5000, 'LF Whisperin Core': 4 } },
 { min: '40*', max: '50', items: { 'Shell Credits' : 10000, 'Topological Confinement': 3, "Nova": 4, 'MF Whisperin Core': 4 } },
