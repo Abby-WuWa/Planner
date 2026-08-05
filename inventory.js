@@ -9,6 +9,7 @@ const itemMetadata = {
 "expW2": { title: "Energy Core", group: "ac", category: "general", rank: 2, image: "ww_icons/general/Medium_Energy_Core.png"},
 "expW3": { title: "Energy Core", group: "ac", category: "general", rank: 3, image: "ww_icons/general/Advanced_Energy_Core.png"},
 "expW4": { title: "Energy Core", group: "ac", category: "general", rank: 4, image: "ww_icons/general/Premium_Energy_Core.png"},
+"Mysterious Code": { title: "Mysterious Code", group: "ad", category: "general", rank: 4, image: "ww_icons/general/Mysterious_Code.png"},
 
 /*Enemy Drops*/
 "TBC_enemy": { title: "TBC Enemy", group: "b", category: "enemy", rank: 0, image: "ww_icons/skill_mat/TBC_enemy.webp"},
