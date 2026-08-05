@@ -351,6 +351,14 @@ const characters = [
   wpn: "sword",
   jsid: "rover_spectro_req"
   },
+      {
+  name: "Rover - Electro",
+  image: "ww_icons/char/rover_icon.webp",
+  rank: 1,
+  atrb: "electro",
+  wpn: "sword",
+  jsid: "rover_electro_req"
+  },
    {
     name: "Sanhua",
     image: "ww_icons/char/sanhua_icon.webp",
