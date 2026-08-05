@@ -384,6 +384,17 @@ rover_spectro_req: [
 { from: 8, to: 9, items: { 'Shell Credits': 70000, 'Heterized Metallic Drip': 3, 'FF Whisperin Core': 3, "Unending Destruction": 1 } },
 { from: 9, to: 10,items: { 'Shell Credits': 100000, 'Heterized Metallic Drip': 6, 'FF Whisperin Core': 4, "Unending Destruction": 1 } },
 ],
+rover_electro_req: [
+{ from: 1, to: 2, items: { 'Shell Credits': 1500, 'Broken Wing Polarizer': 2, 'LF Whisperin Core': 2 } },
+{ from: 2, to: 3, items: { 'Shell Credits': 2000, 'Broken Wing Polarizer': 3, 'LF Whisperin Core': 3 } },
+{ from: 3, to: 4, items: { 'Shell Credits': 4500, 'Monowing Polarizer': 2, 'MF Whisperin Core': 2 } },
+{ from: 4, to: 5, items: { 'Shell Credits': 6000, 'Monowing Polarizer': 3, 'MF Whisperin Core': 3 } },
+{ from: 5, to: 6, items: { 'Shell Credits': 16000, 'Polywing Polarizer': 3, 'HF Whisperin Core': 2 } },
+{ from: 6, to: 7, items: { 'Shell Credits': 30000, 'Polywing Polarizer': 5, 'HF Whisperin Core': 3, "We Who Question": 1 } },
+{ from: 7, to: 8, items: { 'Shell Credits': 50000, 'Layered Wing Polarizer': 2, 'FF Whisperin Core': 2, "We Who Question": 1 } },
+{ from: 8, to: 9, items: { 'Shell Credits': 70000, 'Layered Wing Polarizer': 3, 'FF Whisperin Core': 3, "We Who Question": 1 } },
+{ from: 9, to: 10,items: { 'Shell Credits': 100000, 'Layered Wing Polarizer': 6, 'FF Whisperin Core': 4, "We Who Question": 1 } },
+],
 shorekeeper_req: [
 { from: 1, to: 2, items: { 'Shell Credits': 1500, 'Lento Helix': 2, 'LF Whisperin Core': 2 } },
 { from: 2, to: 3, items: { 'Shell Credits': 2000, 'Lento Helix': 3, 'LF Whisperin Core': 3 } },
