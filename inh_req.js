@@ -135,6 +135,10 @@ rover_spectro_req: [
 { from: 0, to: 1, items: { 'Shell Credits': 10000, 'Reactive Metallic Drip': 3, 'MF Whisperin Core': 3, "Unending Destruction": 1 } },
 { from: 1, to: 2, items: { 'Shell Credits': 20000, 'Polarized Metallic Drip': 3, 'HF Whisperin Core': 3, "Unending Destruction": 1 } }
 ],
+rover_electro_req: [
+{ from: 0, to: 1, items: { 'Shell Credits': 10000, 'Monowing Polarizer': 3, 'MF Whisperin Core': 3, "We Who Question": 1 } },
+{ from: 1, to: 2, items: { 'Shell Credits': 20000, 'Polywing Polarizer': 3, 'HF Whisperin Core': 3, "We Who Question": 1 } }
+],
 shorekeeper_req: [
 { from: 0, to: 1, items: { 'Shell Credits': 10000, 'Adagio Helix': 3, 'MF Whisperin Core': 3, "Sentinel's Dagger": 1 } },
 { from: 1, to: 2, items: { 'Shell Credits': 20000, 'Andante Helix': 3, 'HF Whisperin Core': 3, "Sentinel's Dagger": 1 } }
