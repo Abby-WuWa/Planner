@@ -381,7 +381,7 @@ const characters = [
     rank: 1,
     atrb: "glacio",
     wpn: "rectifier",
-    jsid: "Suisui_req"
+    jsid: "suisui_req"
   },
   {
     name: "Taoqi",
