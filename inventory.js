@@ -169,5 +169,5 @@ const itemMetadata = {
 "Forget-Me-Not": { title: "Forget-Me-Not", group: "fbd", category: "flower", rank: 0, image: "ww_icons/asc_mat/forget_me_not.webp"},
 "Past Reveries": { title: "Past Reveries", group: "fbe", category: "flower", rank: 0, image: "ww_icons/asc_mat/past_reveries.webp"},
 "Flowborne Dream": { title: "Flowborne Dream", group: "fbf", category: "flower", rank: 0, image: "ww_icons/asc_mat/flowborne_dream.webp"},
-"Cloudperch Seed": { title: "Cloudperch Seed", group: "fbf", category: "flower", rank: 0, image: "ww_icons/asc_mat/cloudperch_seed.webp"},
+"Cloudperch Seed": { title: "Cloudperch Seed", group: "fbg", category: "flower", rank: 0, image: "ww_icons/asc_mat/cloudperch_seed.webp"},
 };

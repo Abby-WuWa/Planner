@@ -375,7 +375,7 @@ const characters = [
     wpn: "gauntlets",
     jsid: "sigrika_req"
   },
-    {
+   {
     name: "Suisui",
     image: "ww_icons/char/suisui_icon.webp",
     rank: 1,
