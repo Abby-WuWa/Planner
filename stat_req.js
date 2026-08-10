@@ -151,6 +151,10 @@ sigrika_req: [
 { from: 0, to: 1, items: { 'Shell Credits': 50000, 'HF Waveworn Shard': 3, 'Chipped Exoswarm Pendant': 3 } },
 { from: 1, to: 2, items: { 'Shell Credits': 100000, 'FF Waveworn Shard': 3, 'Intact Exoswarm Pendant': 3, "Gold in Memory": 1 } }
 ],
+suisui_req: [
+{ from: 0, to: 1, items: { 'Shell Credits': 50000, 'Solidified String': 3, 'HF Autopuppet Kernel': 3 } },
+{ from: 1, to: 2, items: { 'Shell Credits': 100000, 'Melodic String': 3, 'FF Autopuppet Kernel': 3, "Skyward Glazed Heart": 1 } }
+],
 verina_req: [
 { from: 0, to: 1, items: { 'Shell Credits': 50000, 'Andante Helix': 3, 'HF Howler Core': 3 } },
 { from: 1, to: 2, items: { 'Shell Credits': 100000, 'Presto Helix': 3, 'FF Howler Core': 3, "Monument Bell": 1 } }
@@ -158,6 +162,10 @@ verina_req: [
 xiangli_req: [
 { from: 0, to: 1, items: { 'Shell Credits': 50000, 'Cadence Leaf': 3, 'HF Whisperin Core': 3 } },
 { from: 1, to: 2, items: { 'Shell Credits': 100000, 'Cadence Blossom': 3, 'FF Whisperin Core': 3, "Unending Destruction": 1 } }
+],
+yangyang_x_req: [
+{ from: 0, to: 1, items: { 'Shell Credits': 50000, 'Polywing Polarizer': 3, 'HF Autopuppet Kernel': 3 } },
+{ from: 1, to: 2, items: { 'Shell Credits': 100000, 'Layered Wing Polarizer': 3, 'FF Autopuppet Kernel': 3, "Skyward Glazed Heart": 1 } }
 ],
 yinlin_req: [
 { from: 0, to: 1, items: { 'Shell Credits': 50000, 'Andante Helix': 3, 'HF Whisperin Core': 3 } },

@@ -375,6 +375,14 @@ const characters = [
     wpn: "gauntlets",
     jsid: "sigrika_req"
   },
+    {
+    name: "Suisui",
+    image: "ww_icons/char/Suisui_icon.webp",
+    rank: 1,
+    atrb: "glacio",
+    wpn: "rectifier",
+    jsid: "Suisui_req"
+  },
   {
     name: "Taoqi",
     image: "ww_icons/char/taoqi_icon.webp",
@@ -406,6 +414,14 @@ const characters = [
     atrb: "aero",
     wpn: "sword",
     jsid: "yangyang_req"
+  },
+  { 
+    name: "Yangyang: Xuanling",
+    image: "ww_icons/char/yangyang_x_icon.webp",
+    rank: 1,
+    atrb: "havoc",
+    wpn: "sword",
+    jsid: "yangyang_x_req"
   },
   {
     name: "Youhu",

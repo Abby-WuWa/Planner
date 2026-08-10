@@ -49,6 +49,10 @@ const itemMetadata = {
 "Worn Exoswarm Pendant": { title: "Exoswarm Pendant", group: "bi", category: "enemy", rank: 2, image: "ww_icons/skill_mat/worn_exoswarm_pendant.webp"},
 "Chipped Exoswarm Pendant": { title: "Exoswarm Pendant", group: "bi", category: "enemy", rank: 3, image: "ww_icons/skill_mat/chipped_exoswarm_pendant.webp"},
 "Intact Exoswarm Pendant": { title: "Exoswarm Pendant", group: "bi", category: "enemy", rank: 4, image: "ww_icons/skill_mat/intact_exoswarm_pendant.webp"},
+"LF Autopuppet Kernel": { title: "Autopuppet Kernel", group: "bj", category: "enemy", rank: 1, image: "ww_icons/skill_mat/lf_autopuppet_kernel.webp"},
+"MF Autopuppet Kernel": { title: "Autopuppet Kernel", group: "bj", category: "enemy", rank: 2, image: "ww_icons/skill_mat/mf_autopuppet_kernel.webp"},
+"HF Autopuppet Kernel": { title: "Autopuppet Kernel", group: "bj", category: "enemy", rank: 3, image: "ww_icons/skill_mat/hf_autopuppet_kernel.webp"},
+"FF Autopuppet Kernel": { title: "Autopuppet Kernel", group: "bj", category: "enemy", rank: 4, image: "ww_icons/skill_mat/ff_autopuppet_kernel.webp"},
 
 /*Weekly Material*/
 "TBC_weekly": { title: "TBC Weekly", group: "c", category: "weekly", rank: 3, image: "ww_icons/skill_mat/TBC_weekly.webp"},
@@ -61,6 +65,7 @@ const itemMetadata = {
 "Curse of the Abyss": { title: "Curse of the Abyss", group: "cg", category: "weekly", rank: 3, image: "ww_icons/skill_mat/curse_of_the_abyss.webp"},
 "Gold in Memory": { title: "Gold in Memory", group: "ch", category: "weekly", rank: 3, image: "ww_icons/skill_mat/gold_in_memory.webp"},
 "We Who Question": { title: "We Who Question", group: "ci", category: "weekly", rank: 3, image: "ww_icons/skill_mat/we_who_question.webp"},
+"Skyward Glazed Heart": { title: "Skyward Glazed Heart", group: "cj", category: "weekly", rank: 3, image: "ww_icons/skill_mat/skyward_glazed_heart.webp"},
 
 /*Boss Material*/
 "TBC_boss": { title: "TBC Boss", group: "d", category: "boss", rank: 3, image: "ww_icons/res_mat/TBC_boss.webp"},
@@ -85,7 +90,7 @@ const itemMetadata = {
 "Burning Judgment": { title: "Burning Judgment", group: "ds", category: "boss", rank: 3, image: "ww_icons/res_mat/burning_judgment.webp"},
 "Our Choice": { title: "Our Choice", group: "dt", category: "boss", rank: 3, image: "ww_icons/res_mat/our_choice.webp"},
 "Nightmare Flashdrive": { title: "Nightmare Flashdrive", group: "du", category: "boss", rank: 3, image: "ww_icons/res_mat/nightmare_flashdrive.webp"},
-
+"Solidarity's Loneflame": { title: "Solidarity's Loneflame", group: "dv", category: "boss", rank: 3, image: "ww_icons/res_mat/solidaritys_loneflame.webp"},
 
 /*Domain Drops*/
 "TBC_domain": { title: "TBC Domain", group: "e", category: "domain", rank: 0, image: "ww_icons/skill_mat/TBC_domain.webp"},
@@ -163,4 +168,6 @@ const itemMetadata = {
 "Redbell": { title: "Redbell", group: "fbc", category: "flower", rank: 0, image: "ww_icons/asc_mat/redbell.webp"},
 "Forget-Me-Not": { title: "Forget-Me-Not", group: "fbd", category: "flower", rank: 0, image: "ww_icons/asc_mat/forget_me_not.webp"},
 "Past Reveries": { title: "Past Reveries", group: "fbe", category: "flower", rank: 0, image: "ww_icons/asc_mat/past_reveries.webp"},
+"Flowborne Dream": { title: "Flowborne Dream", group: "fbf", category: "flower", rank: 0, image: "ww_icons/asc_mat/flowborne_dream.webp"},
+"Cloudperch Seed": { title: "Cloudperch Seed", group: "fbf", category: "flower", rank: 0, image: "ww_icons/asc_mat/cloudperch_seed.webp"},
 };

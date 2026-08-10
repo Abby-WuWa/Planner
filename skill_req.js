@@ -428,6 +428,17 @@ verina_req: [
 { from: 8, to: 9, items: { 'Shell Credits': 70000, 'Presto Helix': 3, 'FF Howler Core': 3, "Monument Bell": 1 } },
 { from: 9, to: 10,items: { 'Shell Credits': 100000, 'Presto Helix': 6, 'FF Howler Core': 4, "Monument Bell": 1 } },
 ],
+suisui_req: [
+{ from: 1, to: 2, items: { 'Shell Credits': 1500, 'Spliced String': 2, 'LF Autopuppet Kernel': 2 } },
+{ from: 2, to: 3, items: { 'Shell Credits': 2000, 'Spliced String': 3, 'LF Autopuppet Kernel': 3 } },
+{ from: 3, to: 4, items: { 'Shell Credits': 4500, 'Broken String': 2, 'MF Autopuppet Kernel': 2 } },
+{ from: 4, to: 5, items: { 'Shell Credits': 6000, 'Broken String': 3, 'MF Autopuppet Kernel': 3 } },
+{ from: 5, to: 6, items: { 'Shell Credits': 16000, 'Solidified String': 3, 'HF Autopuppet Kernel': 2 } },
+{ from: 6, to: 7, items: { 'Shell Credits': 30000, 'Solidified String': 5, 'HF Autopuppet Kernel': 3, "Skyward Glazed Heart": 1 } },
+{ from: 7, to: 8, items: { 'Shell Credits': 50000, 'Melodic String': 2, 'FF Autopuppet Kernel': 2, "Skyward Glazed Heart": 1 } },
+{ from: 8, to: 9, items: { 'Shell Credits': 70000, 'Melodic String': 3, 'FF Autopuppet Kernel': 3, "Skyward Glazed Heart": 1 } },
+{ from: 9, to: 10, items: { 'Shell Credits': 100000, 'Melodic String': 6, 'FF Autopuppet Kernel': 4, "Skyward Glazed Heart": 1 } }
+],
 xiangli_req: [
 { from: 1, to: 2, items: { 'Shell Credits': 1500, 'Cadence Seed': 2, 'LF Whisperin Core': 2 } },
 { from: 2, to: 3, items: { 'Shell Credits': 2000, 'Cadence Seed': 3, 'LF Whisperin Core': 3 } },
@@ -438,6 +449,17 @@ xiangli_req: [
 { from: 7, to: 8, items: { 'Shell Credits': 50000, 'Cadence Blossom': 2, 'FF Whisperin Core': 2, "Unending Destruction": 1 } },
 { from: 8, to: 9, items: { 'Shell Credits': 70000, 'Cadence Blossom': 3, 'FF Whisperin Core': 3, "Unending Destruction": 1 } },
 { from: 9, to: 10,items: { 'Shell Credits': 100000, 'Cadence Blossom': 6, 'FF Whisperin Core': 4, "Unending Destruction": 1 } },
+],
+yangyang_x_req: [
+{ from: 1, to: 2, items: { 'Shell Credits': 1500, 'Broken Wing Polarizer': 2, 'LF Autopuppet Kernel': 2 } },
+{ from: 2, to: 3, items: { 'Shell Credits': 2000, 'Broken Wing Polarizer': 3, 'LF Autopuppet Kernel': 3 } },
+{ from: 3, to: 4, items: { 'Shell Credits': 4500, 'Monowing Polarizer': 2, 'MF Autopuppet Kernel': 2 } },
+{ from: 4, to: 5, items: { 'Shell Credits': 6000, 'Monowing Polarizer': 3, 'MF Autopuppet Kernel': 3 } },
+{ from: 5, to: 6, items: { 'Shell Credits': 16000, 'Polywing Polarizer': 3, 'HF Autopuppet Kernel': 2 } },
+{ from: 6, to: 7, items: { 'Shell Credits': 30000, 'Polywing Polarizer': 5, 'HF Autopuppet Kernel': 3, "Skyward Glazed Heart": 1 } },
+{ from: 7, to: 8, items: { 'Shell Credits': 50000, 'Layered Wing Polarizer': 2, 'FF Autopuppet Kernel': 2, "Skyward Glazed Heart": 1 } },
+{ from: 8, to: 9, items: { 'Shell Credits': 70000, 'Layered Wing Polarizer': 3, 'FF Autopuppet Kernel': 3, "Skyward Glazed Heart": 1 } },
+{ from: 9, to: 10, items: { 'Shell Credits': 100000, 'Layered Wing Polarizer': 6, 'FF Autopuppet Kernel': 4, "Skyward Glazed Heart": 1 } }
 ],
 yinlin_req: [ 
 { from: 1, to: 2, items: { 'Shell Credits': 1500, 'Lento Helix': 2, 'LF Whisperin Core': 2 } },

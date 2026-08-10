@@ -295,6 +295,14 @@ sigrika_req: [
 { min: '70*', max: '80', items: { 'Shell Credits' : 40000, "Our Choice": 12, "Arithmetic Shell": 16, 'Chipped Exoswarm Pendant': 8 } },
 { min: '80*', max: '90', items: { 'Shell Credits' : 80000, "Our Choice": 16, "Arithmetic Shell": 20, 'Intact Exoswarm Pendant': 4 } }
 ],
+suisui_req: [
+{ min: '20*', max: '40', items: { 'Shell Credits' : 5000, 'LF Autopuppet Kernel': 4 } },
+{ min: '40*', max: '50', items: { 'Shell Credits' : 10000, "Solidarity's Loneflame": 3, "Flowborne Dream": 4, 'MF Autopuppet Kernel': 4 } },
+{ min: '50*', max: '60', items: { 'Shell Credits' : 15000, "Solidarity's Loneflame": 6, "Flowborne Dream": 8, 'MF Autopuppet Kernel': 8 } },
+{ min: '60*', max: '70', items: { 'Shell Credits' : 20000, "Solidarity's Loneflame": 9, "Flowborne Dream": 12, 'HF Autopuppet Kernel': 4 } },
+{ min: '70*', max: '80', items: { 'Shell Credits' : 40000, "Solidarity's Loneflame": 12, "Flowborne Dream": 16, 'HF Autopuppet Kernel': 8 } },
+{ min: '80*', max: '90', items: { 'Shell Credits' : 80000, "Solidarity's Loneflame": 16, "Flowborne Dream": 20, 'FF Autopuppet Kernel': 4 } }
+],
 verina_req: [
 { min: '20*', max: '40', items: { 'Shell Credits' : 5000, 'LF Howler Core': 4 } },
 { min: '40*', max: '50', items: { 'Shell Credits' : 10000, 'Elegy Tacet Core': 3, "Belle Poppy": 4, 'MF Howler Core': 4 } },
@@ -310,6 +318,14 @@ xiangli_req: [
 { min: '60*', max: '70', items: { 'Shell Credits' : 20000, 'Hidden Thunder Tacet Core': 9, "Violet Coral": 12, 'HF Whisperin Core': 4 } },
 { min: '70*', max: '80', items: { 'Shell Credits' : 40000, 'Hidden Thunder Tacet Core': 12, "Violet Coral": 16, 'HF Whisperin Core': 8 } },
 { min: '80*', max: '90', items: { 'Shell Credits' : 80000, 'Hidden Thunder Tacet Core': 16, "Violet Coral": 20, 'FF Whisperin Core': 4 } }
+],
+yangyang_x_req: [
+{ min: '20*', max: '40', items: { 'Shell Credits' : 5000, 'LF Autopuppet Kernel': 4 } },
+{ min: '40*', max: '50', items: { 'Shell Credits' : 10000, "Solidarity's Loneflame": 3, "Cloudperch Seed": 4, 'MF Autopuppet Kernel': 4 } },
+{ min: '50*', max: '60', items: { 'Shell Credits' : 15000, "Solidarity's Loneflame": 6, "Cloudperch Seed": 8, 'MF Autopuppet Kernel': 8 } },
+{ min: '60*', max: '70', items: { 'Shell Credits' : 20000, "Solidarity's Loneflame": 9, "Cloudperch Seed": 12, 'HF Autopuppet Kernel': 4 } },
+{ min: '70*', max: '80', items: { 'Shell Credits' : 40000, "Solidarity's Loneflame": 12, "Cloudperch Seed": 16, 'HF Autopuppet Kernel': 8 } },
+{ min: '80*', max: '90', items: { 'Shell Credits' : 80000, "Solidarity's Loneflame": 16, "Cloudperch Seed": 20, 'FF Autopuppet Kernel': 4 } }
 ],
 yinlin_req: [
 { min: '20*', max: '40', items: { 'Shell Credits' : 5000, 'LF Whisperin Core': 4 } },
