@@ -377,7 +377,7 @@ const characters = [
   },
     {
     name: "Suisui",
-    image: "ww_icons/char/Suisui_icon.webp",
+    image: "ww_icons/char/suisui_icon.webp",
     rank: 1,
     atrb: "glacio",
     wpn: "rectifier",
