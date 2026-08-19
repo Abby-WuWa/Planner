@@ -135,6 +135,14 @@ jianxin_req: [
 { min: '70*', max: '80', items: { 'Shell Credits' : 40000, 'Roaring Rock Fist': 12, 'Lanternberry': 16, 'HF Whisperin Core': 8 } },
 { min: '80*', max: '90', items: { 'Shell Credits' : 80000, 'Roaring Rock Fist': 16, 'Lanternberry': 20, 'FF Whisperin Core': 4 } }
 ],
+jingran_req: [
+{ min: '20*', max: '40', items: { 'Shell Credits' : 5000, 'LF Whisperin Core': 4 } },
+{ min: '40*', max: '50', items: { 'Shell Credits' : 10000, "Forged Empyrean's Sigh": 3, "Cloudperch Seed": 4, 'MF Whisperin Core': 4 } },
+{ min: '50*', max: '60', items: { 'Shell Credits' : 15000, "Forged Empyrean's Sigh": 6, "Cloudperch Seed": 8, 'MF Whisperin Core': 8 } },
+{ min: '60*', max: '70', items: { 'Shell Credits' : 20000, "Forged Empyrean's Sigh": 9, "Cloudperch Seed": 12, 'HF Whisperin Core': 4 } },
+{ min: '70*', max: '80', items: { 'Shell Credits' : 40000, "Forged Empyrean's Sigh": 12, "Cloudperch Seed": 16, 'HF Whisperin Core': 8 } },
+{ min: '80*', max: '90', items: { 'Shell Credits' : 80000, "Forged Empyrean's Sigh": 16, "Cloudperch Seed": 20, 'FF Whisperin Core': 4 } }
+],
 jinshi_req: [ 
 { min: '20*', max: '40', items: { 'Shell Credits' : 5000, 'LF Howler Core': 4 } },
 { min: '40*', max: '50', items: { 'Shell Credits' : 10000, 'Elegy Tacet Core': 3, "Loong's Pearl": 4, 'MF Howler Core': 4 } },
@@ -222,6 +230,14 @@ phrolova_req: [
 { min: '60*', max: '70', items: { 'Shell Credits' : 20000, 'Truth in Lies': 9, "Afterlife": 12, 'HF Polygon Core': 4 } },
 { min: '70*', max: '80', items: { 'Shell Credits' : 40000, 'Truth in Lies': 12, "Afterlife": 16, 'HF Polygon Core': 8 } },
 { min: '80*', max: '90', items: { 'Shell Credits' : 80000, 'Truth in Lies': 16, "Afterlife": 20, 'FF Polygon Core': 4 } }
+],
+qingxiao_req: [
+{ min: '20*', max: '40', items: { 'Shell Credits' : 5000, 'LF Autopuppet Kernel': 4 } },
+{ min: '40*', max: '50', items: { 'Shell Credits' : 10000, "Forged Empyrean's Sigh": 3, "Blade Blossom": 4, 'MF Autopuppet Kernel': 4 } },
+{ min: '50*', max: '60', items: { 'Shell Credits' : 15000, "Forged Empyrean's Sigh": 6, "Blade Blossom": 8, 'MF Autopuppet Kernel': 8 } },
+{ min: '60*', max: '70', items: { 'Shell Credits' : 20000, "Forged Empyrean's Sigh": 9, "Blade Blossom": 12, 'HF Autopuppet Kernel': 4 } },
+{ min: '70*', max: '80', items: { 'Shell Credits' : 40000, "Forged Empyrean's Sigh": 12, "Blade Blossom": 16, 'HF Autopuppet Kernel': 8 } },
+{ min: '80*', max: '90', items: { 'Shell Credits' : 80000, "Forged Empyrean's Sigh": 16, "Blade Blossom": 20, 'FF Autopuppet Kernel': 4 } }
 ],
 qiuyuan_req: [
 { min: '20*', max: '40', items: { 'Shell Credits' : 5000, 'LF Whisperin Core': 4 } },

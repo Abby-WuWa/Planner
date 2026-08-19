@@ -67,6 +67,10 @@ jianxin_req: [
 { from: 0, to: 1, items: { 'Shell Credits': 10000, 'Cadence Bud': 3, 'MF Whisperin Core': 3, "Unending Destruction": 1 } },
 { from: 1, to: 2, items: { 'Shell Credits': 20000, 'Cadence Leaf': 3, 'HF Whisperin Core': 3, "Unending Destruction": 1 } }
 ],
+jingran_req: [
+{ from: 0, to: 1, items: { 'Shell Credits': 10000, 'MF Carved Crystal': 3, 'MF Whisperin Core': 3, "Skyward Glazed Heart": 1 } },
+{ from: 1, to: 2, items: { 'Shell Credits': 20000, 'HF Carved Crystal': 3, 'HF Whisperin Core': 3, "Skyward Glazed Heart": 1 } }
+],
 jinshi_req: [ 
 { from: 0, to: 1, items: { 'Shell Credits': 10000, 'Waveworn Residue 226': 3, 'MF Howler Core': 3, "Sentinel's Dagger": 1 } },
 { from: 1, to: 2, items: { 'Shell Credits': 20000, 'Waveworn Residue 235': 3, 'HF Howler Core': 3, "Sentinel's Dagger": 1 } }
@@ -110,6 +114,10 @@ phoebe_req: [
 phrolova_req: [
 { from: 0, to: 1, items: { 'Shell Credits': 10000, 'Adagio Helix': 3, 'MF Polygon Core': 3, "The Netherworld's Stare": 1 } },
 { from: 1, to: 2, items: { 'Shell Credits': 20000, 'Andante Helix': 3, 'HF Polygon Core': 3, "The Netherworld's Stare": 1 } }
+],
+qingxiao_req: [
+{ from: 0, to: 1, items: { 'Shell Credits': 10000, 'Monowing Polarizer': 3, 'MF Autopuppet Kernel': 3, "We Who Question": 1 } },
+{ from: 1, to: 2, items: { 'Shell Credits': 20000, 'Polywing Polarizer': 3, 'HF Autopuppet Kernel': 3, "We Who Question": 1 } }
 ],
 qiuyuan_req: [
 { from: 0, to: 1, items: { 'Shell Credits': 10000, 'Reactive Metallic Drip': 3, 'MF Whisperin Core': 3, "Curse of the Abyss": 1 } },

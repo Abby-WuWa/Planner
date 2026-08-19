@@ -199,6 +199,14 @@ const characters = [
     wpn: "gauntlets",
     jsid: "jianxin_req"
   },
+    {
+    name: "Jingran",
+    image: "ww_icons/char/jingran_icon.webp",
+    rank: 1,
+    atrb: "fusion",
+    wpn: "boradblade",
+    jsid: "jingran_req"
+  },
   {
     name: "Jinshi",
     image: "ww_icons/char/jinshi_icon.webp",
@@ -302,6 +310,14 @@ const characters = [
     atrb: "havoc",
     wpn: "rectifier",
     jsid: "phrolova_req"
+  },
+   {
+    name: "Qingxiao",
+    image: "ww_icons/char/qingxiao_icon.webp",
+    rank: 1,
+    atrb: "aero",
+    wpn: "sword",
+    jsid: "qingxiao_req"
   },
  {
     name: "Qiuyuan",

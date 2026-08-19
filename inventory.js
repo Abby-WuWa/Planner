@@ -91,6 +91,7 @@ const itemMetadata = {
 "Our Choice": { title: "Our Choice", group: "dt", category: "boss", rank: 3, image: "ww_icons/res_mat/our_choice.webp"},
 "Nightmare Flashdrive": { title: "Nightmare Flashdrive", group: "du", category: "boss", rank: 3, image: "ww_icons/res_mat/nightmare_flashdrive.webp"},
 "Solidarity's Loneflame": { title: "Solidarity's Loneflame", group: "dv", category: "boss", rank: 3, image: "ww_icons/res_mat/solidaritys_loneflame.webp"},
+"Forged Empyrean's Sigh": { title: "Forged Empyrean's Sigh", group: "dw", category: "boss", rank: 3, image: "ww_icons/res_mat/forged_empyreans_sigh.webp"},
 
 /*Domain Drops*/
 "TBC_domain": { title: "TBC Domain", group: "e", category: "domain", rank: 0, image: "ww_icons/skill_mat/TBC_domain.webp"},
@@ -170,4 +171,5 @@ const itemMetadata = {
 "Past Reveries": { title: "Past Reveries", group: "fbe", category: "flower", rank: 0, image: "ww_icons/asc_mat/past_reveries.webp"},
 "Flowborne Dream": { title: "Flowborne Dream", group: "fbf", category: "flower", rank: 0, image: "ww_icons/asc_mat/flowborne_dream.webp"},
 "Cloudperch Seed": { title: "Cloudperch Seed", group: "fbg", category: "flower", rank: 0, image: "ww_icons/asc_mat/cloudperch_seed.webp"},
+"Blade Blossom": { title: "Blade Blossom", group: "fbh", category: "flower", rank: 0, image: "ww_icons/asc_mat/blade_blossom.webp"},
 };

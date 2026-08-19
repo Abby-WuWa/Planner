@@ -197,6 +197,17 @@ jianxin_req: [
 { from: 8, to: 9, items: { 'Shell Credits': 70000, 'Cadence Blossom': 3, 'FF Whisperin Core': 3, "Unending Destruction": 1 } },
 { from: 9, to: 10,items: { 'Shell Credits': 100000, 'Cadence Blossom': 6, 'FF Whisperin Core': 4, "Unending Destruction": 1 } },
 ],
+jingran_req: [
+{ from: 1, to: 2, items: { 'Shell Credits': 1500, 'LF Carved Crystal': 2, 'LF Whisperin Core': 2 } },
+{ from: 2, to: 3, items: { 'Shell Credits': 2000, 'LF Carved Crystal': 3, 'LF Whisperin Core': 3 } },
+{ from: 3, to: 4, items: { 'Shell Credits': 4500, 'MF Carved Crystal': 2, 'MF Whisperin Core': 2 } },
+{ from: 4, to: 5, items: { 'Shell Credits': 6000, 'MF Carved Crystal': 3, 'MF Whisperin Core': 3 } },
+{ from: 5, to: 6, items: { 'Shell Credits': 16000, 'HF Carved Crystal': 3, 'HF Whisperin Core': 2 } },
+{ from: 6, to: 7, items: { 'Shell Credits': 30000, 'HF Carved Crystal': 5, 'HF Whisperin Core': 3, "Skyward Glazed Heart": 1 } },
+{ from: 7, to: 8, items: { 'Shell Credits': 50000, 'FF Carved Crystal': 2, 'FF Whisperin Core': 2, "Skyward Glazed Heart": 1 } },
+{ from: 8, to: 9, items: { 'Shell Credits': 70000, 'FF Carved Crystal': 3, 'FF Whisperin Core': 3, "Skyward Glazed Heart": 1 } },
+{ from: 9, to: 10, items: { 'Shell Credits': 100000, 'FF Carved Crystal': 6, 'FF Whisperin Core': 4, "Skyward Glazed Heart": 1 } }
+],
 jinshi_req: [ 
 { from: 1, to: 2, items: { 'Shell Credits': 1500, 'Waveworn Residue 210': 2, 'LF Howler Core': 2 } },
 { from: 2, to: 3, items: { 'Shell Credits': 2000, 'Waveworn Residue 210': 3, 'LF Howler Core': 3 } },
@@ -317,6 +328,17 @@ phrolova_req: [
 { from: 7, to: 8, items: { 'Shell Credits': 50000, 'Presto Helix': 2, 'FF Polygon Core': 2, "The Netherworld's Stare": 1 } },
 { from: 8, to: 9, items: { 'Shell Credits': 70000, 'Presto Helix': 3, 'FF Polygon Core': 3, "The Netherworld's Stare": 1 } },
 { from: 9, to: 10,items: { 'Shell Credits': 100000, 'Presto Helix': 6, 'FF Polygon Core': 4, "The Netherworld's Stare": 1 } },
+],
+qingxiao_req: [
+{ from: 1, to: 2, items: { 'Shell Credits': 1500, 'Broken Wing Polarizer': 2, 'LF Autopuppet Kernel': 2 } },
+{ from: 2, to: 3, items: { 'Shell Credits': 2000, 'Broken Wing Polarizer': 3, 'LF Autopuppet Kernel': 3 } },
+{ from: 3, to: 4, items: { 'Shell Credits': 4500, 'Monowing Polarizer': 2, 'MF Autopuppet Kernel': 2 } },
+{ from: 4, to: 5, items: { 'Shell Credits': 6000, 'Monowing Polarizer': 3, 'MF Autopuppet Kernel': 3 } },
+{ from: 5, to: 6, items: { 'Shell Credits': 16000, 'Polywing Polarizer': 3, 'HF Autopuppet Kernel': 2 } },
+{ from: 6, to: 7, items: { 'Shell Credits': 30000, 'Polywing Polarizer': 5, 'HF Autopuppet Kernel': 3, "We Who Question": 1 } },
+{ from: 7, to: 8, items: { 'Shell Credits': 50000, 'Layered Wing Polarizer': 2, 'FF Autopuppet Kernel': 2, "We Who Question": 1 } },
+{ from: 8, to: 9, items: { 'Shell Credits': 70000, 'Layered Wing Polarizer': 3, 'FF Autopuppet Kernel': 3, "We Who Question": 1 } },
+{ from: 9, to: 10, items: { 'Shell Credits': 100000, 'Layered Wing Polarizer': 6, 'FF Autopuppet Kernel': 4, "We Who Question": 1 } }
 ],
 qiuyuan_req: [
 { from: 1, to: 2, items: { 'Shell Credits': 1500, 'Inert Metallic Drip': 2, 'LF Whisperin Core': 2 } },
