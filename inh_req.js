@@ -59,6 +59,10 @@ hiyuki_req: [
 { from: 0, to: 1, items: { 'Shell Credits': 10000, 'Monowing Polarizer': 3, 'MF Exoswarm Core': 3, "We Who Question": 1 } },
 { from: 1, to: 2, items: { 'Shell Credits': 20000, 'Polywing Polarizer': 3, 'HF Exoswarm Core': 3, "We Who Question": 1 } }
 ],
+hsin_req: [
+{ from: 0, to: 1, items: { 'Shell Credits': 50000, 'Solidified String': 3, 'HF Autopuppet Kernel': 3 } },
+{ from: 1, to: 2, items: { 'Shell Credits': 100000, 'Melodic String': 3, 'FF Autopuppet Kernel': 3, "Remnant of the Wheel": 1 } }
+],
 iuno_req: [
 { from: 0, to: 1, items: { 'Shell Credits': 10000, 'Cadence Bud': 3, 'MF Polygon Core': 3, "The Netherworld's Stare": 1 } },
 { from: 1, to: 2, items: { 'Shell Credits': 20000, 'Cadence Leaf': 3, 'HF Polygon Core': 3, "The Netherworld's Stare": 1 } }
@@ -158,6 +162,10 @@ sigrika_req: [
 suisui_req: [
 { from: 0, to: 1, items: { 'Shell Credits': 10000, 'Broken String': 3, 'MF Autopuppet Kernel': 3, "Skyward Glazed Heart": 1 } },
 { from: 1, to: 2, items: { 'Shell Credits': 20000, 'Solidified String': 3, 'HF Autopuppet Kernel': 3, "Skyward Glazed Heart": 1 } }
+],
+suoming_req: [
+{ from: 0, to: 1, items: { 'Shell Credits': 10000, 'Monowing Polarizer': 3, 'MF Howler Core': 3, "Remnant of the Wheel": 1 } },
+{ from: 1, to: 2, items: { 'Shell Credits': 20000, 'Polywing Polarizer': 3, 'HF Howler Core': 3, "Remnant of the Wheel": 1 } }
 ],
 verina_req: [
 { from: 0, to: 1, items: { 'Shell Credits': 10000, 'Adagio Helix': 3, 'MF Howler Core': 3, "Monument Bell": 1 } },

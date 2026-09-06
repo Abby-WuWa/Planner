@@ -119,6 +119,14 @@ hiyuki_req: [
 { min: '70*', max: '80', items: { 'Shell Credits' : 40000, "Our Choice": 12, "Redbell": 16, 'HF Exoswarm Core': 8 } },
 { min: '80*', max: '90', items: { 'Shell Credits' : 80000, "Our Choice": 16, "Redbell": 20, 'FF Exoswarm Core': 4 } }
 ],
+hsin_req: [
+{ min: '20*', max: '40', items: { 'Shell Credits' : 5000, 'LF Autopuppet Kernel': 4 } },
+{ min: '40*', max: '50', items: { 'Shell Credits' : 10000, "Solidarity's Loneflame": 3, "Bloom of Hearkening": 4, 'MF Autopuppet Kernel': 4 } },
+{ min: '50*', max: '60', items: { 'Shell Credits' : 15000, "Solidarity's Loneflame": 6, "Bloom of Hearkening": 8, 'MF Autopuppet Kernel': 8 } },
+{ min: '60*', max: '70', items: { 'Shell Credits' : 20000, "Solidarity's Loneflame": 9, "Bloom of Hearkening": 12, 'HF Autopuppet Kernel': 4 } },
+{ min: '70*', max: '80', items: { 'Shell Credits' : 40000, "Solidarity's Loneflame": 12, "Bloom of Hearkening": 16, 'HF Autopuppet Kernel': 8 } },
+{ min: '80*', max: '90', items: { 'Shell Credits' : 80000, "Solidarity's Loneflame": 16, "Bloom of Hearkening": 20, 'FF Autopuppet Kernel': 4 } }
+],
 iuno_req: [
 { min: '20*', max: '40', items: { 'Shell Credits' : 5000, 'LF Polygon Core': 4 } },
 { min: '40*', max: '50', items: { 'Shell Credits' : 10000, 'Abyssal Husk': 3, "Sliverglow Bloom": 4, 'MF Polygon Core': 4 } },
@@ -318,6 +326,14 @@ suisui_req: [
 { min: '60*', max: '70', items: { 'Shell Credits' : 20000, "Solidarity's Loneflame": 9, "Flowborne Dream": 12, 'HF Autopuppet Kernel': 4 } },
 { min: '70*', max: '80', items: { 'Shell Credits' : 40000, "Solidarity's Loneflame": 12, "Flowborne Dream": 16, 'HF Autopuppet Kernel': 8 } },
 { min: '80*', max: '90', items: { 'Shell Credits' : 80000, "Solidarity's Loneflame": 16, "Flowborne Dream": 20, 'FF Autopuppet Kernel': 4 } }
+],
+suoming_req: [
+{ min: '20*', max: '40', items: { 'Shell Credits' : 5000, 'LF Howler Core': 4 } },
+{ min: '40*', max: '50', items: { 'Shell Credits' : 10000, "Forged Empyrean's Sigh": 3, "Miasmic Branch": 4, 'MF Howler Core': 4 } },
+{ min: '50*', max: '60', items: { 'Shell Credits' : 15000, "Forged Empyrean's Sigh": 6, "Miasmic Branch": 8, 'MF Howler Core': 8 } },
+{ min: '60*', max: '70', items: { 'Shell Credits' : 20000, "Forged Empyrean's Sigh": 9, "Miasmic Branch": 12, 'HF Howler Core': 4 } },
+{ min: '70*', max: '80', items: { 'Shell Credits' : 40000, "Forged Empyrean's Sigh": 12, "Miasmic Branch": 16, 'HF Howler Core': 8 } },
+{ min: '80*', max: '90', items: { 'Shell Credits' : 80000, "Forged Empyrean's Sigh": 16, "Miasmic Branch": 20, 'FF Howler Core': 4 } }
 ],
 verina_req: [
 { min: '20*', max: '40', items: { 'Shell Credits' : 5000, 'LF Howler Core': 4 } },

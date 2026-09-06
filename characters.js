@@ -184,6 +184,14 @@ const characters = [
     jsid: "hiyuki_req"
   },
   {
+    name: "Hsin",
+    image: "ww_icons/char/hsin_icon.webp",
+    rank: 1,
+    atrb: "electro",
+    wpn: "rectifier",
+    jsid: "hsin_req"
+  },
+  {
     name: "Iuno",
     image: "ww_icons/char/iuno_icon.webp",
     rank: 1,
@@ -398,6 +406,14 @@ const characters = [
     atrb: "glacio",
     wpn: "rectifier",
     jsid: "suisui_req"
+  },
+  {
+    name: "Suoming",
+    image: "ww_icons/char/suoming_icon.webp",
+    rank: 1,
+    atrb: "electro",
+    wpn: "sword",
+    jsid: "suoming_req"
   },
   {
     name: "Taoqi",

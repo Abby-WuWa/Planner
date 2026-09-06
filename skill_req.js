@@ -175,6 +175,17 @@ hiyuki_req: [
 { from: 8, to: 9, items: { 'Shell Credits': 70000, 'Layered Wing Polarizer': 3, 'FF Exoswarm Core': 3, "We Who Question": 1 } },
 { from: 9, to: 10, items: { 'Shell Credits': 100000, 'Layered Wing Polarizer': 6, 'FF Exoswarm Core': 4, "We Who Question": 1 } }
 ],
+hsin_req: [
+{ from: 1, to: 2, items: { 'Shell Credits': 1500, 'Spliced String': 2, 'LF Autopuppet Kernel': 2 } },
+{ from: 2, to: 3, items: { 'Shell Credits': 2000, 'Spliced String': 3, 'LF Autopuppet Kernel': 3 } },
+{ from: 3, to: 4, items: { 'Shell Credits': 4500, 'Broken String': 2, 'MF Autopuppet Kernel': 2 } },
+{ from: 4, to: 5, items: { 'Shell Credits': 6000, 'Broken String': 3, 'MF Autopuppet Kernel': 3 } },
+{ from: 5, to: 6, items: { 'Shell Credits': 16000, 'Solidified String': 3, 'HF Autopuppet Kernel': 2 } },
+{ from: 6, to: 7, items: { 'Shell Credits': 30000, 'Solidified String': 5, 'HF Autopuppet Kernel': 3, "Remnant of the Wheel": 1 } },
+{ from: 7, to: 8, items: { 'Shell Credits': 50000, 'Melodic String': 2, 'FF Autopuppet Kernel': 2, "Remnant of the Wheel": 1 } },
+{ from: 8, to: 9, items: { 'Shell Credits': 70000, 'Melodic String': 3, 'FF Autopuppet Kernel': 3, "Remnant of the Wheel": 1 } },
+{ from: 9, to: 10, items: { 'Shell Credits': 100000, 'Melodic String': 6, 'FF Autopuppet Kernel': 4, "Remnant of the Wheel": 1 } }
+],
 iuno_req: [
 { from: 1, to: 2, items: { 'Shell Credits': 1500, 'Cadence Seed': 2, 'LF Polygon Core': 2 } },
 { from: 2, to: 3, items: { 'Shell Credits': 2000, 'Cadence Seed': 3, 'LF Polygon Core': 3 } },
@@ -439,17 +450,6 @@ sigrika_req: [
 { from: 8, to: 9, items: { 'Shell Credits': 70000, 'FF Waveworn Shard': 3, 'Intact Exoswarm Pendant': 3, "Gold in Memory": 1 } },
 { from: 9, to: 10, items: { 'Shell Credits': 100000, 'FF Waveworn Shard': 6, 'Intact Exoswarm Pendant': 4, "Gold in Memory": 1 } }
 ],
-verina_req: [ 
-{ from: 1, to: 2, items: { 'Shell Credits': 1500, 'Lento Helix': 2, 'LF Howler Core': 2 } },
-{ from: 2, to: 3, items: { 'Shell Credits': 2000, 'Lento Helix': 3, 'LF Howler Core': 3 } },
-{ from: 3, to: 4, items: { 'Shell Credits': 4500, 'Adagio Helix': 2, 'MF Howler Core': 2 } },
-{ from: 4, to: 5, items: { 'Shell Credits': 6000, 'Adagio Helix': 3, 'MF Howler Core': 3 } },
-{ from: 5, to: 6, items: { 'Shell Credits': 16000, 'Andante Helix': 3, 'HF Howler Core': 2 } },
-{ from: 6, to: 7, items: { 'Shell Credits': 30000, 'Andante Helix': 5, 'HF Howler Core': 3, "Monument Bell": 1 } },
-{ from: 7, to: 8, items: { 'Shell Credits': 50000, 'Presto Helix': 2, 'FF Howler Core': 2, "Monument Bell": 1 } },
-{ from: 8, to: 9, items: { 'Shell Credits': 70000, 'Presto Helix': 3, 'FF Howler Core': 3, "Monument Bell": 1 } },
-{ from: 9, to: 10,items: { 'Shell Credits': 100000, 'Presto Helix': 6, 'FF Howler Core': 4, "Monument Bell": 1 } },
-],
 suisui_req: [
 { from: 1, to: 2, items: { 'Shell Credits': 1500, 'Spliced String': 2, 'LF Autopuppet Kernel': 2 } },
 { from: 2, to: 3, items: { 'Shell Credits': 2000, 'Spliced String': 3, 'LF Autopuppet Kernel': 3 } },
@@ -460,6 +460,28 @@ suisui_req: [
 { from: 7, to: 8, items: { 'Shell Credits': 50000, 'Melodic String': 2, 'FF Autopuppet Kernel': 2, "Skyward Glazed Heart": 1 } },
 { from: 8, to: 9, items: { 'Shell Credits': 70000, 'Melodic String': 3, 'FF Autopuppet Kernel': 3, "Skyward Glazed Heart": 1 } },
 { from: 9, to: 10, items: { 'Shell Credits': 100000, 'Melodic String': 6, 'FF Autopuppet Kernel': 4, "Skyward Glazed Heart": 1 } }
+],
+suoming_req: [
+{ from: 1, to: 2, items: { 'Shell Credits': 1500, 'Broken Wing Polarizer': 2, 'LF Howler Core': 2 } },
+{ from: 2, to: 3, items: { 'Shell Credits': 2000, 'Broken Wing Polarizer': 3, 'LF Howler Core': 3 } },
+{ from: 3, to: 4, items: { 'Shell Credits': 4500, 'Monowing Polarizer': 2, 'MF Howler Core': 2 } },
+{ from: 4, to: 5, items: { 'Shell Credits': 6000, 'Monowing Polarizer': 3, 'MF Howler Core': 3 } },
+{ from: 5, to: 6, items: { 'Shell Credits': 16000, 'Polywing Polarizer': 3, 'HF Howler Core': 2 } },
+{ from: 6, to: 7, items: { 'Shell Credits': 30000, 'Polywing Polarizer': 5, 'HF Howler Core': 3, "Remnant of the Wheel": 1 } },
+{ from: 7, to: 8, items: { 'Shell Credits': 50000, 'Layered Wing Polarizer': 2, 'FF Howler Core': 2, "Remnant of the Wheel": 1 } },
+{ from: 8, to: 9, items: { 'Shell Credits': 70000, 'Layered Wing Polarizer': 3, 'FF Howler Core': 3, "Remnant of the Wheel": 1 } },
+{ from: 9, to: 10, items: { 'Shell Credits': 100000, 'Layered Wing Polarizer': 6, 'FF Howler Core': 4, "Remnant of the Wheel": 1 } }
+],
+verina_req: [ 
+{ from: 1, to: 2, items: { 'Shell Credits': 1500, 'Lento Helix': 2, 'LF Howler Core': 2 } },
+{ from: 2, to: 3, items: { 'Shell Credits': 2000, 'Lento Helix': 3, 'LF Howler Core': 3 } },
+{ from: 3, to: 4, items: { 'Shell Credits': 4500, 'Adagio Helix': 2, 'MF Howler Core': 2 } },
+{ from: 4, to: 5, items: { 'Shell Credits': 6000, 'Adagio Helix': 3, 'MF Howler Core': 3 } },
+{ from: 5, to: 6, items: { 'Shell Credits': 16000, 'Andante Helix': 3, 'HF Howler Core': 2 } },
+{ from: 6, to: 7, items: { 'Shell Credits': 30000, 'Andante Helix': 5, 'HF Howler Core': 3, "Monument Bell": 1 } },
+{ from: 7, to: 8, items: { 'Shell Credits': 50000, 'Presto Helix': 2, 'FF Howler Core': 2, "Monument Bell": 1 } },
+{ from: 8, to: 9, items: { 'Shell Credits': 70000, 'Presto Helix': 3, 'FF Howler Core': 3, "Monument Bell": 1 } },
+{ from: 9, to: 10,items: { 'Shell Credits': 100000, 'Presto Helix': 6, 'FF Howler Core': 4, "Monument Bell": 1 } },
 ],
 xiangli_req: [
 { from: 1, to: 2, items: { 'Shell Credits': 1500, 'Cadence Seed': 2, 'LF Whisperin Core': 2 } },
