@@ -66,7 +66,7 @@ const itemMetadata = {
 "Gold in Memory": { title: "Gold in Memory", group: "ch", category: "weekly", rank: 3, image: "ww_icons/skill_mat/gold_in_memory.webp"},
 "We Who Question": { title: "We Who Question", group: "ci", category: "weekly", rank: 3, image: "ww_icons/skill_mat/we_who_question.webp"},
 "Skyward Glazed Heart": { title: "Skyward Glazed Heart", group: "cj", category: "weekly", rank: 3, image: "ww_icons/skill_mat/skyward_glazed_heart.webp"},
-"Remnant of the Wheel": { title: "Remnant of the Wheel", group: "ck", category: "weekly", rank: 3, image: "ww_icons/skill_mat/TBC_weekly.webp"},
+"Remnant of the Wheel": { title: "Remnant of the Wheel", group: "ck", category: "weekly", rank: 3, image: "ww_icons/skill_mat/remnant_of_the_wheel.webp"},
 
 /*Boss Material*/
 "TBC_boss": { title: "TBC Boss", group: "d", category: "boss", rank: 3, image: "ww_icons/res_mat/TBC_boss.webp"},
@@ -173,6 +173,6 @@ const itemMetadata = {
 "Flowborne Dream": { title: "Flowborne Dream", group: "fbf", category: "flower", rank: 0, image: "ww_icons/asc_mat/flowborne_dream.webp"},
 "Cloudperch Seed": { title: "Cloudperch Seed", group: "fbg", category: "flower", rank: 0, image: "ww_icons/asc_mat/cloudperch_seed.webp"},
 "Blade Blossom": { title: "Blade Blossom", group: "fbh", category: "flower", rank: 0, image: "ww_icons/asc_mat/blade_blossom.webp"},
-"Bloom of Hearkening": { title: "Bloom of Hearkening", group: "fbi", category: "flower", rank: 0, image: "ww_icons/asc_mat/TBC_flower.webp"},
-"Miasmic Branch": { title: "Miasmic Branch", group: "fbj", category: "flower", rank: 0, image: "ww_icons/asc_mat/TBC_flower.webp"},
+"Bloom of Hearkening": { title: "Bloom of Hearkening", group: "fbi", category: "flower", rank: 0, image: "ww_icons/asc_mat/bloom_of_hearkening.webp"},
+"Miasmic Branch": { title: "Miasmic Branch", group: "fbj", category: "flower", rank: 0, image: "ww_icons/asc_mat/miasmic_branch.webp"},
 };
